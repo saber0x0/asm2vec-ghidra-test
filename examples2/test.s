@@ -1,0 +1,3334 @@
+FUN_140001080:
+	LEA RAX,[0x140005e58]
+	RET
+	
+FUN_140001090:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV EDI,EDX
+	MOV RBX,RCX
+	CALL qword ptr [0x140005738]
+	TEST DIL,0x1
+	JZ 0x1400010d2
+	MOV RCX,RBX
+	TEST DIL,0x4
+	JNZ 0x1400010c8
+	CALL qword ptr [0x1400058a0]
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	MOV EDX,0x178
+	CALL 0x140001350
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_1400010e0:
+	MOV qword ptr [RSP + 0x10],RBX
+	PUSH RDI
+	SUB RSP,0x1d0
+	MOV RAX,qword ptr [0x14000a040]
+	XOR RAX,RSP
+	MOV qword ptr [RSP + 0x1c0],RAX
+	MOV RDI,RCX
+	MOV dword ptr [RSP + 0x28],0x8
+	MOV dword ptr [RSP + 0x2c],0xff
+	LEA RCX,[RSP + 0x28]
+	CALL qword ptr [0x140005038]
+	MOV RCX,RDI
+	CALL qword ptr [0x140005730]
+	XOR ECX,ECX
+	CALL qword ptr [0x140005728]
+	MOV ECX,0x18
+	CALL qword ptr [0x140005720]
+	MOV qword ptr [RSP + 0x20],RAX
+	TEST RAX,RAX
+	JZ 0x14000115d
+	XORPS XMM0,XMM0
+	XOR ECX,ECX
+	MOVUPS xmmword ptr [RAX],XMM0
+	MOV qword ptr [RAX + 0x10],RCX
+	MOV RCX,RAX
+	CALL qword ptr [0x140005718]
+	MOV RBX,RAX
+	JMP 0x14000115f
+	XOR EBX,EBX
+	CALL qword ptr [0x140005708]
+	MOV RCX,RAX
+	CALL qword ptr [0x140005710]
+	LEA RDX,[0x140005a38]
+	MOV RCX,RDI
+	CALL qword ptr [0x140005700]
+	XOR EDX,EDX
+	MOV R8D,0x188
+	LEA RCX,[RSP + 0x30]
+	CALL 0x140004098
+	XOR R8D,R8D
+	LEA EDX,[R8 + 0x66]
+	LEA RCX,[RSP + 0x30]
+	CALL qword ptr [0x1400054d8]
+	NOP
+	LEA RAX,[0x1400060c0]
+	MOV qword ptr [RSP + 0x30],RAX
+	LEA RDX,[0x1400060b0]
+	LEA RCX,[RSP + 0x1a8]
+	CALL qword ptr [0x1400054b8]
+	NOP
+	LEA RDX,[0x1400060b0]
+	LEA RCX,[RSP + 0x1b0]
+	CALL qword ptr [0x1400054b8]
+	NOP
+	CALL qword ptr [0x1400054a0]
+	MOV EDX,0xe
+	LEA ECX,[RDX + 0x72]
+	CALL qword ptr [0x1400054a8]
+	MOV RCX,RAX
+	MOV EDX,0x80
+	CALL qword ptr [0x1400051d8]
+	MOV qword ptr [RSP + 0x1a0],RAX
+	LEA RAX,[RSP + 0x30]
+	MOV qword ptr [RDI + 0x40],RAX
+	LEA RCX,[RSP + 0x30]
+	CALL qword ptr [0x1400056f0]
+	TEST RBX,RBX
+	JZ 0x14000122d
+	MOV RAX,qword ptr [RBX]
+	MOV EDX,0x1
+	MOV RCX,RBX
+	CALL qword ptr [RAX + 0x8]
+	NOP
+	LEA RCX,[RSP + 0x1b0]
+	CALL qword ptr [0x1400056e8]
+	LEA RCX,[RSP + 0x1a8]
+	CALL qword ptr [0x1400056e8]
+	LEA RCX,[RSP + 0x188]
+	CALL qword ptr [0x1400056a8]
+	LEA RAX,[0x140005a60]
+	MOV qword ptr [RSP + 0x170],RAX
+	LEA RCX,[RSP + 0x170]
+	CALL 0x140001490
+	LEA RCX,[RSP + 0x30]
+	CALL qword ptr [0x1400056e0]
+	XOR EAX,EAX
+	MOV RCX,qword ptr [RSP + 0x1c0]
+	XOR RCX,RSP
+	CALL 0x140003550
+	MOV RBX,qword ptr [RSP + 0x1e8]
+	ADD RSP,0x1d0
+	POP RDI
+	RET
+	
+FUN_1400012b0:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	ADD RCX,0x180
+	CALL qword ptr [0x1400056e8]
+	LEA RCX,[RBX + 0x178]
+	CALL qword ptr [0x1400056e8]
+	LEA RCX,[RBX + 0x158]
+	CALL qword ptr [0x1400056a8]
+	LEA RCX,[RBX + 0x140]
+	LEA RAX,[0x140005a60]
+	MOV qword ptr [RCX],RAX
+	CALL 0x140001490
+	MOV RCX,RBX
+	ADD RSP,0x20
+	POP RBX
+	JMP qword ptr [0x1400056e0]
+	
+FUN_140001310:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	ADD RCX,0x158
+	CALL qword ptr [0x1400056a8]
+	LEA RCX,[RBX + 0x140]
+	LEA RAX,[0x140005a60]
+	MOV qword ptr [RCX],RAX
+	CALL 0x140001490
+	MOV RCX,RBX
+	ADD RSP,0x20
+	POP RBX
+	JMP qword ptr [0x1400056e0]
+	
+_guard_check_icall:
+	RET 0x0
+	
+FUN_140001360:
+	MOV EAX,0x1388
+	RET
+	
+FUN_140001370:
+	XOR EAX,EAX
+	RET
+	
+FUN_140001380:
+	MOV EAX,dword ptr [RCX + 0x14c]
+	AND EAX,0x20
+	RET
+	
+FUN_140001390:
+	MOV EAX,dword ptr [RCX + 0x14c]
+	AND EAX,0x10
+	RET
+	
+FUN_1400013a0:
+	MOV EAX,dword ptr [RCX + 0x14c]
+	AND EAX,0x8
+	RET
+	
+FUN_1400013b0:
+	MOV EAX,dword ptr [RCX + 0x14c]
+	AND EAX,0x4
+	RET
+	
+FUN_1400013c0:
+	MOV EAX,dword ptr [RCX + 0x14c]
+	AND EAX,0x2
+	RET
+	
+FUN_1400013d0:
+	MOV EAX,dword ptr [RCX + 0x14c]
+	AND EAX,0x1
+	RET
+	
+FUN_1400013e0:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	LEA RAX,[0x140005a60]
+	MOV EDI,EDX
+	MOV qword ptr [RCX],RAX
+	MOV RBX,RCX
+	CALL 0x140001490
+	TEST DIL,0x1
+	JZ 0x14000142b
+	MOV RCX,RBX
+	TEST DIL,0x4
+	JNZ 0x140001421
+	CALL qword ptr [0x1400058a0]
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	MOV EDX,0x10
+	CALL 0x140001350
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_140001440:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV EDI,EDX
+	MOV RBX,RCX
+	CALL 0x140001490
+	TEST DIL,0x1
+	JZ 0x140001481
+	MOV RCX,RBX
+	TEST DIL,0x4
+	JNZ 0x140001477
+	CALL qword ptr [0x1400058a0]
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	MOV EDX,0x10
+	CALL 0x140001350
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_140001490:
+	SUB RSP,0x458
+	MOV RAX,qword ptr [0x14000a040]
+	XOR RAX,RSP
+	MOV qword ptr [RSP + 0x440],RAX
+	LEA RAX,[0x140005a90]
+	MOV qword ptr [RCX],RAX
+	CALL qword ptr [0x1400056c0]
+	NOP
+	MOV RCX,qword ptr [RSP + 0x440]
+	XOR RCX,RSP
+	CALL 0x140003550
+	ADD RSP,0x458
+	RET
+	
+FUN_1400014f0:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	MOV RAX,RDX
+	LEA RCX,[0x1400067b0]
+	XORPS XMM0,XMM0
+	LEA RDX,[RBX + 0x8]
+	MOV qword ptr [RBX],RCX
+	LEA RCX,[RAX + 0x8]
+	MOVUPS xmmword ptr [RDX],XMM0
+	CALL qword ptr [0x1400051e8]
+	MOV RAX,RBX
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+FUN_140001530:
+	MOV RDX,qword ptr [RCX + 0x8]
+	LEA RAX,[0x140005eb0]
+	TEST RDX,RDX
+	CMOVNZ RAX,RDX
+	RET
+	
+FUN_140001550:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	LEA RAX,[0x1400067b0]
+	MOV RDI,RCX
+	MOV qword ptr [RCX],RAX
+	MOV EBX,EDX
+	ADD RCX,0x8
+	CALL qword ptr [0x1400051f0]
+	TEST BL,0x1
+	JZ 0x140001585
+	MOV EDX,0x18
+	MOV RCX,RDI
+	CALL 0x1400037dc
+	MOV RBX,qword ptr [RSP + 0x30]
+	MOV RAX,RDI
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_1400015a0:
+	LEA RAX,[0x140005ec8]
+	MOV qword ptr [RCX + 0x10],0x0
+	MOV qword ptr [RCX + 0x8],RAX
+	LEA RAX,[0x140006780]
+	MOV qword ptr [RCX],RAX
+	MOV RAX,RCX
+	RET
+	
+FUN_1400015f0:
+	SUB RSP,0x48
+	LEA RCX,[RSP + 0x20]
+	CALL 0x1400015a0
+	LEA RDX,[0x140007f68]
+	LEA RCX,[RSP + 0x20]
+	CALL 0x1400041f3
+	
+FUN_140001610:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	MOV RAX,RDX
+	LEA RCX,[0x1400067b0]
+	XORPS XMM0,XMM0
+	LEA RDX,[RBX + 0x8]
+	MOV qword ptr [RBX],RCX
+	LEA RCX,[RAX + 0x8]
+	MOVUPS xmmword ptr [RDX],XMM0
+	CALL qword ptr [0x1400051e8]
+	LEA RAX,[0x140006780]
+	MOV qword ptr [RBX],RAX
+	MOV RAX,RBX
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+FUN_140001650:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	MOV RAX,RDX
+	LEA RCX,[0x1400067b0]
+	XORPS XMM0,XMM0
+	LEA RDX,[RBX + 0x8]
+	MOV qword ptr [RBX],RCX
+	LEA RCX,[RAX + 0x8]
+	MOVUPS xmmword ptr [RDX],XMM0
+	CALL qword ptr [0x1400051e8]
+	LEA RAX,[0x140006798]
+	MOV qword ptr [RBX],RAX
+	MOV RAX,RBX
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+FUN_140001690:
+	SUB RSP,0x28
+	LEA RCX,[0x140005ee0]
+	CALL qword ptr [0x140005100]
+	INT3
+	
+FUN_1400016d0:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV RBX,RCX
+	MOV EDI,EDX
+	ADD RCX,0x158
+	CALL qword ptr [0x1400056a8]
+	LEA RCX,[RBX + 0x140]
+	LEA RAX,[0x140005a60]
+	MOV qword ptr [RCX],RAX
+	CALL 0x140001490
+	MOV RCX,RBX
+	CALL qword ptr [0x1400056e0]
+	TEST DIL,0x1
+	JZ 0x140001738
+	MOV RCX,RBX
+	TEST DIL,0x4
+	JNZ 0x14000172e
+	CALL qword ptr [0x1400058a0]
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	MOV EDX,0x170
+	CALL 0x140001350
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_140001750:
+	LEA RAX,[0x1400063e8]
+	RET
+	
+FUN_140001760:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV RBX,RCX
+	MOV EDI,EDX
+	ADD RCX,0x180
+	CALL qword ptr [0x1400056e8]
+	LEA RCX,[RBX + 0x178]
+	CALL qword ptr [0x1400056e8]
+	LEA RCX,[RBX + 0x158]
+	CALL qword ptr [0x1400056a8]
+	LEA RCX,[RBX + 0x140]
+	LEA RAX,[0x140005a60]
+	MOV qword ptr [RCX],RAX
+	CALL 0x140001490
+	MOV RCX,RBX
+	CALL qword ptr [0x1400056e0]
+	TEST DIL,0x1
+	JZ 0x1400017e2
+	MOV RCX,RBX
+	TEST DIL,0x4
+	JNZ 0x1400017d8
+	CALL qword ptr [0x1400058a0]
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	MOV EDX,0x188
+	CALL 0x140001350
+	MOV RAX,RBX
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_1400017f0:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV RDI,RDX
+	LEA R8,[RCX + 0x178]
+	MOV RBX,RCX
+	MOV EDX,0x3e9
+	MOV RCX,RDI
+	CALL qword ptr [0x140005498]
+	LEA R8,[RBX + 0x180]
+	MOV EDX,0x3e8
+	MOV RCX,RDI
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	JMP qword ptr [0x140005498]
+	
+FUN_140001840:
+	LEA RAX,[0x140006000]
+	RET
+	
+FUN_140001850:
+	MOV qword ptr [RSP + 0x10],RBX
+	PUSH RDI
+	SUB RSP,0x30
+	MOV RAX,qword ptr [0x14000a040]
+	XOR RAX,RSP
+	MOV qword ptr [RSP + 0x28],RAX
+	MOV RBX,RCX
+	CALL qword ptr [0x140005490]
+	XOR EDX,EDX
+	MOV RCX,qword ptr [RBX + 0x40]
+	CALL qword ptr [0x140005198]
+	MOV RCX,RAX
+	CALL qword ptr [0x140005488]
+	MOV RDI,RAX
+	TEST RAX,RAX
+	JZ 0x1400018ec
+	LEA RCX,[RSP + 0x20]
+	CALL qword ptr [0x1400056c8]
+	NOP
+	MOV EDX,0x65
+	LEA RCX,[RSP + 0x20]
+	CALL qword ptr [0x1400054b0]
+	MOV RCX,qword ptr [RSP + 0x20]
+	CMP dword ptr [RCX + -0x10],0x0
+	JZ 0x1400018e1
+	XOR R9D,R9D
+	XOR R8D,R8D
+	MOV EDX,0x800
+	MOV RCX,qword ptr [RDI + 0x8]
+	CALL qword ptr [0x1400051a0]
+	MOV R9,qword ptr [RSP + 0x20]
+	XOR EDX,EDX
+	LEA R8D,[RDX + 0x10]
+	MOV RCX,qword ptr [RDI + 0x8]
+	CALL qword ptr [0x1400051a0]
+	NOP
+	LEA RCX,[RSP + 0x20]
+	CALL qword ptr [0x1400056e8]
+	MOV R9,qword ptr [RBX + 0x170]
+	MOV EDX,0x80
+	LEA R8D,[RDX + -0x7f]
+	MOV RCX,qword ptr [RBX + 0x40]
+	CALL qword ptr [0x1400051a8]
+	MOV R9,qword ptr [RBX + 0x170]
+	XOR R8D,R8D
+	MOV EDX,0x80
+	MOV RCX,qword ptr [RBX + 0x40]
+	CALL qword ptr [0x1400051a8]
+	MOV EAX,0x1
+	MOV RCX,qword ptr [RSP + 0x28]
+	XOR RCX,RSP
+	CALL 0x140003550
+	MOV RBX,qword ptr [RSP + 0x48]
+	ADD RSP,0x30
+	POP RDI
+	RET
+	
+FUN_140001b70:
+	MOV qword ptr [RSP + 0x10],RBX
+	MOV qword ptr [RSP + 0x18],RSI
+	MOV qword ptr [RSP + 0x20],RDI
+	PUSH RBP
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+	LEA RBP,[RSP + -0x240]
+	SUB RSP,0x340
+	MOV RAX,qword ptr [0x14000a040]
+	XOR RAX,RSP
+	MOV qword ptr [RBP + 0x230],RAX
+	MOV RBX,RCX
+	MOV qword ptr [RSP + 0x58],RCX
+	XOR R14D,R14D
+	MOV dword ptr [RSP + 0x30],R14D
+	LEA EDX,[R14 + 0x1]
+	CALL qword ptr [0x140005458]
+	XORPS XMM0,XMM0
+	XOR EAX,EAX
+	MOVUPS xmmword ptr [RBP + 0x190],XMM0
+	MOVUPS xmmword ptr [RBP + 0x1a0],XMM0
+	MOVUPS xmmword ptr [RBP + 0x1b0],XMM0
+	MOVUPS xmmword ptr [RBP + 0x1c0],XMM0
+	MOVUPS xmmword ptr [RBP + 0x1d0],XMM0
+	MOVUPS xmmword ptr [RBP + 0x1e0],XMM0
+	MOVUPS xmmword ptr [RBP + 0x1f0],XMM0
+	MOVUPS xmmword ptr [RBP + 0x200],XMM0
+	MOV qword ptr [RBP + 0x210],RAX
+	LEA RAX,[RBP + 0x198]
+	MOV qword ptr [RBP + 0x190],RAX
+	LEA R8D,[R14 + 0x3]
+	MOV RDX,qword ptr [RBX + 0x180]
+	LEA RCX,[RBP + 0x190]
+	CALL 0x140002b50
+	NOP
+	MOV RDX,qword ptr [RBP + 0x190]
+	LEA RCX,[RBP + -0x70]
+	CALL 0x140002940
+	NOP
+	XORPS XMM0,XMM0
+	XOR EAX,EAX
+	MOVUPS xmmword ptr [RBP + 0x100],XMM0
+	MOVUPS xmmword ptr [RBP + 0x110],XMM0
+	MOVUPS xmmword ptr [RBP + 0x120],XMM0
+	MOVUPS xmmword ptr [RBP + 0x130],XMM0
+	MOVUPS xmmword ptr [RBP + 0x140],XMM0
+	MOVUPS xmmword ptr [RBP + 0x150],XMM0
+	MOVUPS xmmword ptr [RBP + 0x160],XMM0
+	MOVUPS xmmword ptr [RBP + 0x170],XMM0
+	MOV qword ptr [RBP + 0x180],RAX
+	LEA RAX,[RBP + 0x108]
+	MOV qword ptr [RBP + 0x100],RAX
+	LEA R8D,[R14 + 0x3]
+	MOV RDX,qword ptr [RBX + 0x178]
+	LEA RCX,[RBP + 0x100]
+	CALL 0x140002b50
+	NOP
+	MOV RDX,qword ptr [RBP + 0x100]
+	LEA RCX,[RBP + -0x50]
+	CALL 0x140002940
+	NOP
+	MOV qword ptr [RBP + -0x78],R14
+	MOV qword ptr [RBP + -0x80],R14
+	MOV dword ptr [RSP + 0x78],0x10
+	MOV dword ptr [RSP + 0x20],0xf0000000
+	LEA R9D,[R14 + 0x1]
+	XOR R8D,R8D
+	XOR EDX,EDX
+	LEA RCX,[RBP + -0x78]
+	CALL qword ptr [0x140005020]
+	MOV R12,qword ptr [RBP + -0x50]
+	TEST EAX,EAX
+	JZ 0x140002104
+	LEA RAX,[RBP + -0x80]
+	MOV qword ptr [RSP + 0x20],RAX
+	XOR R9D,R9D
+	XOR R8D,R8D
+	MOV EDX,0x8003
+	MOV RCX,qword ptr [RBP + -0x78]
+	CALL qword ptr [0x140005018]
+	TEST EAX,EAX
+	JNZ 0x140001d22
+	XOR EDX,EDX
+	MOV RCX,qword ptr [RBP + -0x78]
+	CALL qword ptr [0x140005028]
+	JMP 0x140002104
+	LEA RDX,[RBP + -0x70]
+	CMP qword ptr [RBP + -0x58],0xf
+	CMOVA RDX,qword ptr [RBP + -0x70]
+	XOR R9D,R9D
+	MOV R8D,dword ptr [RBP + -0x60]
+	MOV RCX,qword ptr [RBP + -0x80]
+	CALL qword ptr [0x140005010]
+	TEST EAX,EAX
+	JNZ 0x140001d60
+	XOR EDX,EDX
+	MOV RCX,qword ptr [RBP + -0x78]
+	CALL qword ptr [0x140005028]
+	MOV RCX,qword ptr [RBP + -0x80]
+	CALL qword ptr [0x140005008]
+	JMP 0x140002104
+	MOV dword ptr [RSP + 0x20],R14D
+	LEA R9,[RSP + 0x78]
+	LEA R8,[RBP + 0x220]
+	MOV EDX,0x2
+	MOV RCX,qword ptr [RBP + -0x80]
+	CALL qword ptr [0x140005000]
+	XOR EDX,EDX
+	TEST EAX,EAX
+	JNZ 0x140001d9f
+	MOV RCX,qword ptr [RBP + -0x78]
+	CALL qword ptr [0x140005028]
+	MOV RCX,qword ptr [RBP + -0x80]
+	CALL qword ptr [0x140005008]
+	JMP 0x140002104
+	MOV R8D,0xf8
+	LEA RCX,[RBP]
+	CALL 0x140004098
+	LEA RAX,[0x140005f68]
+	MOV qword ptr [RBP],RAX
+	LEA RAX,[0x140005f60]
+	MOV qword ptr [RBP + 0x10],RAX
+	LEA RCX,[RBP + 0x98]
+	CALL qword ptr [0x140005148]
+	NOP
+	MOV R13D,0x8
+	MOV dword ptr [RSP + 0x30],R13D
+	XOR R8D,R8D
+	LEA RDX,[RBP + 0x18]
+	LEA RCX,[RBP]
+	CALL qword ptr [0x140005138]
+	NOP
+	MOV RAX,qword ptr [RBP]
+	MOVSXD RCX,dword ptr [RAX + 0x4]
+	LEA RAX,[0x140005f78]
+	MOV qword ptr [RBP + RCX*0x1],RAX
+	MOV RAX,qword ptr [RBP]
+	MOVSXD RCX,dword ptr [RAX + 0x4]
+	LEA EDX,[RCX + -0x98]
+	MOV dword ptr [RBP + RCX*0x1 + -0x4],EDX
+	LEA RCX,[RBP + 0x18]
+	CALL qword ptr [0x140005140]
+	LEA RAX,[0x140005f88]
+	MOV qword ptr [RBP + 0x18],RAX
+	MOV qword ptr [RBP + 0x80],R14
+	MOV dword ptr [RBP + 0x88],R14D
+	MOV R15D,R14D
+	CMP dword ptr [RSP + 0x78],R14D
+	JBE 0x140001ead
+	LEA RSI,[RBP + 0x220]
+	NOP dword ptr [RAX]
+	MOV EDX,0x2
+	LEA RCX,[RSP + 0x60]
+	CALL qword ptr [0x140005108]
+	MOV RBX,RAX
+	LEA RDX,[0x1400016b0]
+	LEA RCX,[RBP + 0x10]
+	CALL qword ptr [0x140005120]
+	MOV RDI,RAX
+	MOV RCX,qword ptr [RAX]
+	MOVSXD RCX,dword ptr [RCX + 0x4]
+	ADD RCX,RAX
+	MOV RDX,qword ptr [RBX + 0x8]
+	CALL qword ptr [RBX]
+	MOV RCX,qword ptr [RDI]
+	MOVSXD RDX,dword ptr [RCX + 0x4]
+	MOV byte ptr [RDX + RDI*0x1 + 0x58],0x30
+	MOVZX EDX,byte ptr [RSI]
+	MOV RCX,RDI
+	CALL qword ptr [0x140005118]
+	INC R15D
+	LEA RSI,[RSI + 0x1]
+	CMP R15D,dword ptr [RSP + 0x78]
+	JC 0x140001e50
+	MOV RCX,qword ptr [RBP + -0x80]
+	CALL qword ptr [0x140005008]
+	XOR EDX,EDX
+	MOV RCX,qword ptr [RBP + -0x78]
+	CALL qword ptr [0x140005028]
+	XORPS XMM0,XMM0
+	MOVUPS xmmword ptr [RBP + -0x30],XMM0
+	MOV ECX,0x30
+	CALL qword ptr [0x140005720]
+	MOV R15,RAX
+	MOV qword ptr [RBP + -0x30],RAX
+	MOV qword ptr [RBP + -0x20],0x20
+	MOV qword ptr [RBP + -0x18],0x2f
+	MOVUPS XMM0,xmmword ptr [0x140005ef8]
+	MOVUPS xmmword ptr [RAX],XMM0
+	MOVUPS XMM1,xmmword ptr [0x140005f08]
+	MOVUPS xmmword ptr [RAX + 0x10],XMM1
+	MOV byte ptr [RAX + 0x20],0x0
+	LEA RCX,[RBP + -0x50]
+	CMP qword ptr [RBP + -0x38],0xf
+	CMOVA RCX,R12
+	MOV R8,qword ptr [RBP + -0x40]
+	CMP R8,0x5
+	JNZ 0x14000201b
+	LEA RDX,[0x140005ef0]
+	CALL 0x1400041f9
+	TEST EAX,EAX
+	JNZ 0x14000201b
+	XORPS XMM0,XMM0
+	MOVUPS xmmword ptr [RSP + 0x38],XMM0
+	MOV qword ptr [RSP + 0x48],R14
+	MOV EDI,0xf
+	MOV qword ptr [RSP + 0x50],RDI
+	MOV byte ptr [RSP + 0x38],AL
+	MOV dword ptr [RSP + 0x30],0xc
+	MOV ECX,dword ptr [RBP + 0x88]
+	MOV EAX,ECX
+	AND AL,0x22
+	CMP AL,0x2
+	JZ 0x140001f89
+	MOV RAX,qword ptr [RBP + 0x58]
+	MOV RBX,qword ptr [RAX]
+	TEST RBX,RBX
+	JZ 0x140001f89
+	MOV RAX,qword ptr [RBP + 0x38]
+	MOV R9,qword ptr [RAX]
+	CMP RBX,qword ptr [RBP + 0x80]
+	CMOVC RBX,qword ptr [RBP + 0x80]
+	JMP 0x140001fab
+	TEST CL,0x4
+	JNZ 0x140001fe9
+	MOV RAX,qword ptr [RBP + 0x50]
+	MOV RCX,qword ptr [RAX]
+	TEST RCX,RCX
+	JZ 0x140001fe9
+	MOV RAX,qword ptr [RBP + 0x30]
+	MOV R9,qword ptr [RAX]
+	MOV RAX,qword ptr [RBP + 0x68]
+	MOVSXD RBX,dword ptr [RAX]
+	ADD RBX,RCX
+	MOV RAX,R9
+	SUB RBX,R9
+	TEST RAX,RAX
+	JZ 0x140001fe9
+	LEA RCX,[RSP + 0x38]
+	CMP RBX,RDI
+	JA 0x140001fd7
+	MOV qword ptr [RSP + 0x48],RBX
+	MOV R8,RBX
+	MOV RDX,R9
+	CALL 0x1400040b0
+	MOV byte ptr [RSP + RBX*0x1 + 0x38],0x0
+	JMP 0x140001fdf
+	MOV RDX,RBX
+	CALL 0x140002dc0
+	MOV R14,qword ptr [RSP + 0x48]
+	MOV RDI,qword ptr [RSP + 0x50]
+	MOV R13D,0xb
+	LEA RCX,[RSP + 0x38]
+	MOV RBX,qword ptr [RSP + 0x38]
+	CMP RDI,0xf
+	CMOVA RCX,RBX
+	CMP R14,0x20
+	JNZ 0x140002025
+	MOV R8,R14
+	MOV RDX,R15
+	CALL 0x1400041f9
+	TEST EAX,EAX
+	JNZ 0x140002025
+	MOV SIL,0x1
+	JMP 0x140002028
+	MOV RDI,qword ptr [RSP + 0x50]
+	MOV RBX,qword ptr [RSP + 0x38]
+	XOR SIL,SIL
+	TEST R13B,0x1
+	JZ 0x140002068
+	CMP RDI,0xf
+	JBE 0x140002068
+	LEA RDX,[RDI + 0x1]
+	MOV RAX,RBX
+	CMP RDX,0x1000
+	JC 0x140002060
+	ADD RDX,0x27
+	MOV RBX,qword ptr [RBX + -0x8]
+	SUB RAX,RBX
+	ADD RAX,-0x8
+	CMP RAX,0x1f
+	JBE 0x140002060
+	CALL qword ptr [0x1400052b8]
+	MOV RCX,RBX
+	CALL 0x1400037dc
+	LEA R8,[0x1400060b0]
+	MOV RCX,qword ptr [RSP + 0x58]
+	TEST SIL,SIL
+	JZ 0x14000209b
+	MOV R9D,0x40
+	LEA RDX,[0x140005f20]
+	CALL qword ptr [0x140005450]
+	XOR EDX,EDX
+	MOV RCX,qword ptr [RSP + 0x58]
+	CALL qword ptr [0x140005448]
+	JMP 0x1400020af
+	MOV R9D,0x10
+	LEA RDX,[0x140005f38]
+	CALL qword ptr [0x140005450]
+	NOP
+	MOV EDX,0x30
+	MOV RCX,R15
+	CALL 0x1400037dc
+	NOP
+	MOV RAX,qword ptr [RBP]
+	MOVSXD RCX,dword ptr [RAX + 0x4]
+	LEA RAX,[0x140005f78]
+	MOV qword ptr [RBP + RCX*0x1],RAX
+	MOV RAX,qword ptr [RBP]
+	MOVSXD RCX,dword ptr [RAX + 0x4]
+	LEA EDX,[RCX + -0x98]
+	MOV dword ptr [RBP + RCX*0x1 + -0x4],EDX
+	LEA RCX,[RBP + 0x18]
+	CALL 0x140002800
+	LEA RCX,[RBP + 0x20]
+	CALL qword ptr [0x140005110]
+	LEA RCX,[RBP + 0x98]
+	CALL qword ptr [0x140005128]
+	NOP
+	MOV RAX,qword ptr [RBP + -0x38]
+	CMP RAX,0xf
+	JBE 0x140002144
+	LEA RDX,[RAX + 0x1]
+	MOV RAX,R12
+	CMP RDX,0x1000
+	JC 0x14000213b
+	ADD RDX,0x27
+	MOV R12,qword ptr [R12 + -0x8]
+	SUB RAX,R12
+	ADD RAX,-0x8
+	CMP RAX,0x1f
+	JBE 0x14000213b
+	CALL qword ptr [0x1400052b8]
+	MOV RCX,R12
+	CALL 0x1400037dc
+	NOP
+	LEA RAX,[RBP + 0x108]
+	MOV RCX,qword ptr [RBP + 0x100]
+	CMP RCX,RAX
+	JZ 0x14000215e
+	CALL qword ptr [0x140005258]
+	NOP
+	MOV RDX,qword ptr [RBP + -0x58]
+	CMP RDX,0xf
+	JBE 0x14000219c
+	INC RDX
+	MOV RCX,qword ptr [RBP + -0x70]
+	MOV RAX,RCX
+	CMP RDX,0x1000
+	JC 0x140002197
+	ADD RDX,0x27
+	MOV RCX,qword ptr [RCX + -0x8]
+	SUB RAX,RCX
+	ADD RAX,-0x8
+	CMP RAX,0x1f
+	JBE 0x140002197
+	CALL qword ptr [0x1400052b8]
+	CALL 0x1400037dc
+	MOVDQA XMM0,xmmword ptr [0x1400067c0]
+	MOVDQU xmmword ptr [RBP + -0x60],XMM0
+	MOV byte ptr [RBP + -0x70],0x0
+	LEA RAX,[RBP + 0x198]
+	MOV RCX,qword ptr [RBP + 0x190]
+	CMP RCX,RAX
+	JZ 0x1400021c6
+	CALL qword ptr [0x140005258]
+	MOV RCX,qword ptr [RBP + 0x230]
+	XOR RCX,RSP
+	CALL 0x140003550
+	LEA R11,[RSP + 0x340]
+	MOV RBX,qword ptr [R11 + 0x38]
+	MOV RSI,qword ptr [R11 + 0x40]
+	MOV RDI,qword ptr [R11 + 0x48]
+	MOV RSP,R11
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP RBP
+	RET
+	
+FUN_140002200:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RAX,qword ptr [RCX]
+	LEA RBX,[RCX + 0x98]
+	MOVSXD RDX,dword ptr [RAX + 0x4]
+	LEA RAX,[0x140005f78]
+	MOV qword ptr [RDX + RBX*0x1 + -0x98],RAX
+	MOV RAX,qword ptr [RCX]
+	LEA RCX,[RBX + -0x80]
+	MOVSXD RDX,dword ptr [RAX + 0x4]
+	LEA R8D,[RDX + -0x98]
+	MOV dword ptr [RDX + RBX*0x1 + -0x9c],R8D
+	CALL 0x140002800
+	LEA RCX,[RBX + -0x78]
+	CALL qword ptr [0x140005110]
+	MOV RCX,RBX
+	ADD RSP,0x20
+	POP RBX
+	JMP qword ptr [0x140005128]
+	
+FUN_140002260:
+	PUSH RBX
+	MOV RBX,R8
+	MOV R11,RCX
+	TEST R9B,0x1
+	JZ 0x140002278
+	TEST byte ptr [RCX + 0x70],0x4
+	JZ 0x140002278
+	MOV CL,0x1
+	JMP 0x14000227a
+	XOR CL,CL
+	TEST R9B,0x2
+	JZ 0x14000228b
+	TEST byte ptr [R11 + 0x70],0x2
+	JZ 0x14000228b
+	MOV AL,0x1
+	JMP 0x14000228d
+	XOR AL,AL
+	MOV qword ptr [RSP + 0x10],RSI
+	MOV qword ptr [RSP + 0x18],RDI
+	MOV qword ptr [RSP + 0x20],R14
+	TEST CL,CL
+	JNZ 0x140002363
+	TEST AL,AL
+	JNZ 0x140002363
+	MOV R8,qword ptr [R8 + 0x8]
+	MOV RAX,qword ptr [R11 + 0x38]
+	ADD R8,qword ptr [RBX]
+	TEST byte ptr [R11 + 0x70],0x2
+	MOV RSI,qword ptr [RAX]
+	JZ 0x1400022c5
+	XOR ECX,ECX
+	JMP 0x1400022db
+	MOV RAX,qword ptr [R11 + 0x40]
+	MOV RCX,qword ptr [RAX]
+	TEST RCX,RCX
+	JZ 0x1400022db
+	CMP qword ptr [R11 + 0x68],RCX
+	JNC 0x1400022db
+	MOV qword ptr [R11 + 0x68],RCX
+	MOV R14,qword ptr [R11 + 0x18]
+	MOV RBX,qword ptr [R11 + 0x68]
+	MOV RAX,RBX
+	MOV RDI,qword ptr [R14]
+	SUB RAX,RDI
+	CMP R8,RAX
+	JA 0x140002363
+	TEST R8,R8
+	JZ 0x14000230c
+	TEST R9B,0x1
+	JZ 0x140002301
+	TEST RSI,RSI
+	JZ 0x140002363
+	TEST R9B,0x2
+	JZ 0x14000230c
+	TEST RCX,RCX
+	JZ 0x140002363
+	LEA R10,[RDI + R8*0x1]
+	TEST R9B,0x1
+	JZ 0x14000232e
+	TEST RSI,RSI
+	JZ 0x14000232e
+	MOV qword ptr [R14],RDI
+	SUB EBX,R10D
+	MOV RAX,qword ptr [R11 + 0x38]
+	MOV qword ptr [RAX],R10
+	MOV RAX,qword ptr [R11 + 0x50]
+	MOV dword ptr [RAX],EBX
+	TEST R9B,0x2
+	JZ 0x14000235e
+	TEST RCX,RCX
+	JZ 0x14000235e
+	MOV RAX,qword ptr [R11 + 0x58]
+	MOVSXD RCX,dword ptr [RAX]
+	MOV RAX,qword ptr [R11 + 0x40]
+	ADD RCX,qword ptr [RAX]
+	MOV RAX,qword ptr [R11 + 0x20]
+	SUB ECX,R10D
+	MOV qword ptr [RAX],RDI
+	MOV RAX,qword ptr [R11 + 0x40]
+	MOV qword ptr [RAX],R10
+	MOV RAX,qword ptr [R11 + 0x58]
+	MOV dword ptr [RAX],ECX
+	MOV qword ptr [RDX],R8
+	JMP 0x14000236a
+	MOV qword ptr [RDX],-0x1
+	MOV R14,qword ptr [RSP + 0x20]
+	XOR EAX,EAX
+	MOV RDI,qword ptr [RSP + 0x18]
+	MOV RSI,qword ptr [RSP + 0x10]
+	MOV qword ptr [RDX + 0x8],0x0
+	MOV qword ptr [RDX + 0x10],RAX
+	MOV RAX,RDX
+	POP RBX
+	RET
+	
+FUN_140002390:
+	MOV qword ptr [RSP + 0x10],RBX
+	MOV qword ptr [RSP + 0x18],RBP
+	PUSH RDI
+	MOV EBX,dword ptr [RSP + 0x30]
+	MOV EDI,R9D
+	MOV RBP,R8
+	MOV R11,RCX
+	TEST BL,0x1
+	JZ 0x1400023b7
+	TEST byte ptr [RCX + 0x70],0x4
+	JZ 0x1400023b7
+	MOV CL,0x1
+	JMP 0x1400023b9
+	XOR CL,CL
+	TEST BL,0x2
+	JZ 0x1400023c9
+	TEST byte ptr [R11 + 0x70],0x2
+	JZ 0x1400023c9
+	MOV AL,0x1
+	JMP 0x1400023cb
+	XOR AL,AL
+	MOV qword ptr [RSP + 0x10],RSI
+	TEST CL,CL
+	JNZ 0x1400024f4
+	TEST AL,AL
+	JNZ 0x1400024f4
+	TEST byte ptr [R11 + 0x70],0x2
+	MOV RAX,qword ptr [R11 + 0x38]
+	MOV RCX,qword ptr [RAX]
+	JZ 0x1400023f3
+	XOR R8D,R8D
+	JMP 0x140002409
+	MOV RAX,qword ptr [R11 + 0x40]
+	MOV R8,qword ptr [RAX]
+	TEST R8,R8
+	JZ 0x140002409
+	CMP qword ptr [R11 + 0x68],R8
+	JNC 0x140002409
+	MOV qword ptr [R11 + 0x68],R8
+	MOV RAX,qword ptr [R11 + 0x18]
+	MOV RSI,qword ptr [R11 + 0x68]
+	MOV R9,qword ptr [RAX]
+	SUB RSI,R9
+	TEST EDI,EDI
+	JZ 0x140002475
+	SUB EDI,0x1
+	JZ 0x14000242e
+	CMP EDI,0x1
+	JNZ 0x1400024f4
+	MOV RAX,RSI
+	JMP 0x140002477
+	MOV EAX,EBX
+	AND EAX,0x3
+	CMP AL,0x3
+	JZ 0x1400024f4
+	TEST BL,0x1
+	JZ 0x140002456
+	TEST RCX,RCX
+	JNZ 0x14000244e
+	TEST R9,R9
+	JNZ 0x1400024f4
+	MOV RAX,RCX
+	SUB RAX,R9
+	JMP 0x140002477
+	TEST BL,0x2
+	JZ 0x1400024f4
+	TEST R8,R8
+	JNZ 0x14000246d
+	TEST R9,R9
+	JNZ 0x1400024f4
+	MOV RAX,R8
+	SUB RAX,R9
+	JMP 0x140002477
+	XOR EAX,EAX
+	LEA R10,[RAX + RBP*0x1]
+	CMP R10,RSI
+	JA 0x1400024f4
+	TEST R10,R10
+	JZ 0x140002499
+	TEST BL,0x1
+	JZ 0x14000248f
+	TEST RCX,RCX
+	JZ 0x1400024f4
+	TEST BL,0x2
+	JZ 0x140002499
+	TEST R8,R8
+	JZ 0x1400024f4
+	LEA RDI,[R9 + R10*0x1]
+	TEST BL,0x1
+	JZ 0x1400024c1
+	TEST RCX,RCX
+	JZ 0x1400024c1
+	MOV RAX,qword ptr [R11 + 0x18]
+	MOV RCX,qword ptr [R11 + 0x68]
+	SUB ECX,EDI
+	MOV qword ptr [RAX],R9
+	MOV RAX,qword ptr [R11 + 0x38]
+	MOV qword ptr [RAX],RDI
+	MOV RAX,qword ptr [R11 + 0x50]
+	MOV dword ptr [RAX],ECX
+	TEST BL,0x2
+	JZ 0x1400024ef
+	TEST R8,R8
+	JZ 0x1400024ef
+	MOV RAX,qword ptr [R11 + 0x58]
+	MOVSXD RCX,dword ptr [RAX]
+	MOV RAX,qword ptr [R11 + 0x40]
+	ADD RCX,qword ptr [RAX]
+	MOV RAX,qword ptr [R11 + 0x20]
+	SUB ECX,EDI
+	MOV qword ptr [RAX],R9
+	MOV RAX,qword ptr [R11 + 0x40]
+	MOV qword ptr [RAX],RDI
+	MOV RAX,qword ptr [R11 + 0x58]
+	MOV dword ptr [RAX],ECX
+	MOV qword ptr [RDX],R10
+	JMP 0x1400024fb
+	MOV qword ptr [RDX],-0x1
+	MOV RSI,qword ptr [RSP + 0x10]
+	XOR EAX,EAX
+	MOV RBX,qword ptr [RSP + 0x18]
+	MOV RBP,qword ptr [RSP + 0x20]
+	MOV qword ptr [RDX + 0x8],0x0
+	MOV qword ptr [RDX + 0x10],RAX
+	MOV RAX,RDX
+	POP RDI
+	RET
+	
+FUN_140002520:
+	SUB RSP,0x18
+	MOV R10,qword ptr [RCX + 0x38]
+	MOV RDX,RCX
+	MOV R8,qword ptr [R10]
+	TEST R8,R8
+	JZ 0x140002590
+	MOV RAX,qword ptr [RCX + 0x50]
+	MOVSXD RCX,dword ptr [RAX]
+	ADD RCX,R8
+	CMP R8,RCX
+	JNC 0x14000254b
+	MOVZX EAX,byte ptr [R8]
+	ADD RSP,0x18
+	RET
+	MOV RAX,qword ptr [RDX + 0x40]
+	MOV RCX,qword ptr [RAX]
+	TEST RCX,RCX
+	JZ 0x140002590
+	TEST byte ptr [RDX + 0x70],0x4
+	JNZ 0x140002590
+	MOV R9,qword ptr [RDX + 0x68]
+	CMP R9,RCX
+	CMOVC R9,RCX
+	CMP R9,R8
+	JBE 0x140002590
+	MOV qword ptr [RDX + 0x68],R9
+	MOV RCX,qword ptr [R10]
+	MOV qword ptr [R10],RCX
+	SUB R9D,ECX
+	MOV RAX,qword ptr [RDX + 0x50]
+	MOV dword ptr [RAX],R9D
+	MOV RAX,qword ptr [RDX + 0x38]
+	MOV RCX,qword ptr [RAX]
+	MOVZX EAX,byte ptr [RCX]
+	ADD RSP,0x18
+	RET
+	MOV EAX,0xffffffff
+	ADD RSP,0x18
+	RET
+	
+FUN_1400025a0:
+	MOV RAX,qword ptr [RCX + 0x38]
+	MOV R8,qword ptr [RAX]
+	TEST R8,R8
+	JZ 0x1400025ec
+	MOV RAX,qword ptr [RCX + 0x18]
+	CMP R8,qword ptr [RAX]
+	JBE 0x1400025ec
+	CMP EDX,-0x1
+	JZ 0x1400025c6
+	CMP DL,byte ptr [R8 + -0x1]
+	JZ 0x1400025c6
+	TEST byte ptr [RCX + 0x70],0x2
+	JNZ 0x1400025ec
+	MOV RAX,qword ptr [RCX + 0x50]
+	INC dword ptr [RAX]
+	MOV RAX,qword ptr [RCX + 0x38]
+	DEC qword ptr [RAX]
+	CMP EDX,-0x1
+	JZ 0x1400025e1
+	MOV RAX,qword ptr [RCX + 0x38]
+	MOV RCX,qword ptr [RAX]
+	MOV byte ptr [RCX],DL
+	XOR EAX,EAX
+	CMP EDX,-0x1
+	CMOVZ EDX,EAX
+	MOV EAX,EDX
+	RET
+	MOV EAX,0xffffffff
+	RET
+	
+FUN_140002600:
+	MOV qword ptr [RSP + 0x10],RBX
+	MOV qword ptr [RSP + 0x18],RBP
+	MOV qword ptr [RSP + 0x20],RSI
+	PUSH RDI
+	PUSH R14
+	PUSH R15
+	SUB RSP,0x20
+	TEST byte ptr [RCX + 0x70],0x2
+	MOV R15D,EDX
+	MOV RBX,RCX
+	JNZ 0x1400027d7
+	CMP EDX,-0x1
+	JNZ 0x140002634
+	XOR EAX,EAX
+	JMP 0x1400027dc
+	MOV RAX,qword ptr [RCX + 0x40]
+	MOV RCX,qword ptr [RCX + 0x58]
+	MOV R8,qword ptr [RAX]
+	MOVSXD RAX,dword ptr [RCX]
+	LEA RDI,[R8 + RAX*0x1]
+	TEST R8,R8
+	JZ 0x1400026ea
+	CMP R8,RDI
+	JNC 0x140002679
+	DEC EAX
+	MOV dword ptr [RCX],EAX
+	MOV RCX,qword ptr [RBX + 0x40]
+	MOV RDX,qword ptr [RCX]
+	LEA RAX,[RDX + 0x1]
+	MOV qword ptr [RCX],RAX
+	LEA RAX,[R8 + 0x1]
+	MOV byte ptr [RDX],R15B
+	MOV qword ptr [RBX + 0x68],RAX
+	MOV EAX,R15D
+	JMP 0x1400027dc
+	MOV RAX,qword ptr [RBX + 0x18]
+	MOV RSI,qword ptr [RAX]
+	SUB RDI,RSI
+	CMP RDI,0x20
+	JC 0x1400026f3
+	CMP RDI,0x3fffffff
+	JNC 0x1400026ba
+	LEA RAX,[RDI + RDI*0x1]
+	MOV RBP,RAX
+	CMP RAX,0x1000
+	JC 0x1400026b0
+	LEA RCX,[RAX + 0x27]
+	CMP RCX,RAX
+	JBE 0x1400027f5
+	JMP 0x1400026cd
+	TEST RAX,RAX
+	JNZ 0x1400026f8
+	XOR R14D,R14D
+	JMP 0x140002704
+	MOV EBP,0x7fffffff
+	CMP RDI,RBP
+	JNC 0x1400027d7
+	MOV ECX,0x80000026
+	CALL qword ptr [0x140005720]
+	TEST RAX,RAX
+	JZ 0x1400027d0
+	LEA R14,[RAX + 0x27]
+	AND R14,-0x20
+	MOV qword ptr [R14 + -0x8],RAX
+	JMP 0x140002704
+	MOV RAX,qword ptr [RBX + 0x18]
+	XOR EDI,EDI
+	MOV RSI,qword ptr [RAX]
+	MOV EBP,0x20
+	MOV RCX,RBP
+	CALL qword ptr [0x140005720]
+	MOV R14,RAX
+	MOV R8,RDI
+	MOV RDX,RSI
+	MOV RCX,R14
+	CALL 0x1400041ff
+	LEA RDX,[R14 + RDI*0x1]
+	LEA RCX,[RDX + 0x1]
+	SUB EBP,EDX
+	MOV qword ptr [RBX + 0x68],RCX
+	ADD EBP,R14D
+	MOV RCX,qword ptr [RBX + 0x20]
+	MOV qword ptr [RCX],R14
+	MOV RCX,qword ptr [RBX + 0x40]
+	MOV qword ptr [RCX],RDX
+	MOV RAX,qword ptr [RBX + 0x58]
+	MOV dword ptr [RAX],EBP
+	TEST byte ptr [RBX + 0x70],0x4
+	JZ 0x140002757
+	MOV RAX,qword ptr [RBX + 0x18]
+	MOV qword ptr [RAX],R14
+	MOV RAX,qword ptr [RBX + 0x38]
+	MOV qword ptr [RAX],R14
+	MOV RAX,qword ptr [RBX + 0x50]
+	MOV dword ptr [RAX],0x0
+	JMP 0x14000277e
+	MOV RAX,qword ptr [RBX + 0x38]
+	MOV RDX,qword ptr [RBX + 0x68]
+	MOV RCX,qword ptr [RAX]
+	MOV RAX,qword ptr [RBX + 0x18]
+	SUB RCX,RSI
+	ADD RCX,R14
+	SUB EDX,ECX
+	MOV qword ptr [RAX],R14
+	MOV RAX,qword ptr [RBX + 0x38]
+	MOV qword ptr [RAX],RCX
+	MOV RAX,qword ptr [RBX + 0x50]
+	MOV dword ptr [RAX],EDX
+	TEST byte ptr [RBX + 0x70],0x1
+	JZ 0x1400027b0
+	CMP RDI,0x1000
+	JC 0x1400027a5
+	MOV RCX,qword ptr [RSI + -0x8]
+	ADD RDI,0x27
+	SUB RSI,RCX
+	LEA RAX,[RSI + -0x8]
+	CMP RAX,0x1f
+	JA 0x1400027d0
+	MOV RSI,RCX
+	MOV RDX,RDI
+	MOV RCX,RSI
+	CALL 0x1400037dc
+	MOV RAX,qword ptr [RBX + 0x58]
+	OR dword ptr [RBX + 0x70],0x1
+	DEC dword ptr [RAX]
+	MOV RCX,qword ptr [RBX + 0x40]
+	MOV RDX,qword ptr [RCX]
+	LEA RAX,[RDX + 0x1]
+	MOV qword ptr [RCX],RAX
+	MOV EAX,R15D
+	MOV byte ptr [RDX],R15B
+	JMP 0x1400027dc
+	CALL qword ptr [0x1400052b8]
+	MOV EAX,0xffffffff
+	MOV RBX,qword ptr [RSP + 0x48]
+	MOV RBP,qword ptr [RSP + 0x50]
+	MOV RSI,qword ptr [RSP + 0x58]
+	ADD RSP,0x20
+	POP R15
+	POP R14
+	POP RDI
+	RET
+	CALL 0x1400015f0
+	INT3
+	
+FUN_140002800:
+	PUSH RBX
+	SUB RSP,0x20
+	TEST byte ptr [RCX + 0x70],0x1
+	LEA RAX,[0x140005f88]
+	MOV qword ptr [RCX],RAX
+	MOV RBX,RCX
+	JZ 0x14000286f
+	MOV RAX,qword ptr [RCX + 0x40]
+	MOV RCX,qword ptr [RAX]
+	TEST RCX,RCX
+	JZ 0x140002831
+	MOV RAX,qword ptr [RBX + 0x58]
+	MOVSXD RDX,dword ptr [RAX]
+	ADD RDX,RCX
+	JMP 0x14000283f
+	MOV RAX,qword ptr [RBX + 0x50]
+	MOVSXD RDX,dword ptr [RAX]
+	MOV RAX,qword ptr [RBX + 0x38]
+	ADD RDX,qword ptr [RAX]
+	MOV RAX,qword ptr [RBX + 0x18]
+	MOV RCX,qword ptr [RAX]
+	SUB RDX,RCX
+	CMP RDX,0x1000
+	JC 0x14000286a
+	MOV R8,qword ptr [RCX + -0x8]
+	ADD RDX,0x27
+	SUB RCX,R8
+	LEA RAX,[RCX + -0x8]
+	CMP RAX,0x1f
+	JA 0x1400028b0
+	MOV RCX,R8
+	CALL 0x1400037dc
+	MOV RAX,qword ptr [RBX + 0x18]
+	XOR ECX,ECX
+	MOV qword ptr [RAX],RCX
+	MOV RAX,qword ptr [RBX + 0x38]
+	MOV qword ptr [RAX],RCX
+	MOV RAX,qword ptr [RBX + 0x50]
+	MOV dword ptr [RAX],ECX
+	MOV RAX,qword ptr [RBX + 0x20]
+	MOV qword ptr [RAX],RCX
+	MOV RAX,qword ptr [RBX + 0x40]
+	MOV qword ptr [RAX],RCX
+	MOV RAX,qword ptr [RBX + 0x58]
+	MOV dword ptr [RAX],ECX
+	AND dword ptr [RBX + 0x70],0xfffffffe
+	MOV qword ptr [RBX + 0x68],RCX
+	MOV RCX,RBX
+	ADD RSP,0x20
+	POP RBX
+	JMP qword ptr [0x140005158]
+	CALL qword ptr [0x1400052b8]
+	
+FUN_1400028e0:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RDX,qword ptr [RCX + 0x18]
+	MOV RBX,RCX
+	CMP RDX,0xf
+	JBE 0x14000291f
+	MOV RCX,qword ptr [RCX]
+	INC RDX
+	CMP RDX,0x1000
+	JC 0x14000291a
+	MOV R8,qword ptr [RCX + -0x8]
+	ADD RDX,0x27
+	SUB RCX,R8
+	LEA RAX,[RCX + -0x8]
+	CMP RAX,0x1f
+	JA 0x140002938
+	MOV RCX,R8
+	CALL 0x1400037dc
+	MOV qword ptr [RBX + 0x10],0x0
+	MOV qword ptr [RBX + 0x18],0xf
+	MOV byte ptr [RBX],0x0
+	ADD RSP,0x20
+	POP RBX
+	RET
+	CALL qword ptr [0x1400052b8]
+	
+FUN_140002940:
+	MOV qword ptr [RSP + 0x18],RBX
+	MOV qword ptr [RSP + 0x20],RBP
+	PUSH RSI
+	PUSH RDI
+	PUSH R14
+	SUB RSP,0x20
+	XOR R14D,R14D
+	XORPS XMM0,XMM0
+	MOVUPS xmmword ptr [RCX],XMM0
+	MOV qword ptr [RCX + 0x10],R14
+	MOV RBP,RDX
+	MOV qword ptr [RCX + 0x18],R14
+	MOV RDI,RCX
+	MOV RBX,-0x1
+	INC RBX
+	CMP byte ptr [RBX + RDX*0x1],R14B
+	JNZ 0x140002970
+	MOV RSI,0x7fffffffffffffff
+	CMP RBX,RSI
+	JA 0x140002a55
+	MOV qword ptr [RCX + 0x18],0xf
+	CMP RBX,0xf
+	JA 0x1400029af
+	MOV R8,RBX
+	MOV qword ptr [RCX + 0x10],RBX
+	CALL 0x1400041ff
+	MOV byte ptr [RDI + RBX*0x1],R14B
+	JMP 0x140002a3f
+	MOV RAX,RBX
+	OR RAX,0xf
+	CMP RAX,RSI
+	JBE 0x1400029e5
+	MOV RAX,-0x8000000000000000
+	ADD RAX,0x27
+	MOV RCX,RAX
+	CALL qword ptr [0x140005720]
+	TEST RAX,RAX
+	JZ 0x140002a0c
+	LEA R14,[RAX + 0x27]
+	AND R14,-0x20
+	MOV qword ptr [R14 + -0x8],RAX
+	JMP 0x140002a21
+	MOV ECX,0x16
+	MOV RSI,RAX
+	CMP RAX,RCX
+	CMOVC RSI,RCX
+	LEA RCX,[RSI + 0x1]
+	CMP RCX,0x1000
+	JC 0x140002a13
+	LEA RAX,[RCX + 0x27]
+	CMP RAX,RCX
+	JBE 0x140002a5b
+	JMP 0x1400029c9
+	CALL qword ptr [0x1400052b8]
+	TEST RCX,RCX
+	JZ 0x140002a21
+	CALL qword ptr [0x140005720]
+	MOV R14,RAX
+	MOV R8,RBX
+	MOV qword ptr [RDI],R14
+	MOV RDX,RBP
+	MOV qword ptr [RDI + 0x10],RBX
+	MOV RCX,R14
+	MOV qword ptr [RDI + 0x18],RSI
+	CALL 0x1400041ff
+	MOV byte ptr [R14 + RBX*0x1],0x0
+	MOV RBX,qword ptr [RSP + 0x50]
+	MOV RAX,RDI
+	MOV RBP,qword ptr [RSP + 0x58]
+	ADD RSP,0x20
+	POP R14
+	POP RDI
+	POP RSI
+	RET
+	CALL 0x140001690
+	INT3
+	CALL 0x1400015f0
+	INT3
+	
+FUN_140002a70:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV EBX,EDX
+	MOV RDI,RCX
+	CALL 0x140002800
+	TEST BL,0x1
+	JZ 0x140002a96
+	MOV EDX,0x78
+	MOV RCX,RDI
+	CALL 0x1400037dc
+	MOV RBX,qword ptr [RSP + 0x30]
+	MOV RAX,RDI
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_140002ab0:
+	MOV qword ptr [RSP + 0x8],RBX
+	MOV qword ptr [RSP + 0x10],RSI
+	PUSH RDI
+	SUB RSP,0x20
+	MOV RAX,qword ptr [RCX + -0x98]
+	MOV RBX,RCX
+	MOV EDI,EDX
+	MOVSXD R8,dword ptr [RAX + 0x4]
+	LEA RAX,[0x140005f78]
+	MOV qword ptr [R8 + RCX*0x1 + -0x98],RAX
+	MOV RAX,qword ptr [RCX + -0x98]
+	MOVSXD R8,dword ptr [RAX + 0x4]
+	LEA R9D,[R8 + -0x98]
+	MOV dword ptr [R8 + RCX*0x1 + -0x9c],R9D
+	ADD RCX,-0x80
+	CALL 0x140002800
+	LEA RCX,[RBX + -0x78]
+	CALL qword ptr [0x140005110]
+	MOV RCX,RBX
+	CALL qword ptr [0x140005128]
+	TEST DIL,0x1
+	JZ 0x140002b2b
+	MOV EDX,0xf8
+	LEA RCX,[RBX + -0x98]
+	CALL 0x1400037dc
+	MOV RSI,qword ptr [RSP + 0x38]
+	LEA RAX,[RBX + -0x98]
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+FUN_140002b50:
+	PUSH RSI
+	PUSH RDI
+	PUSH R13
+	PUSH R14
+	SUB RSP,0x48
+	MOV R13D,R8D
+	MOV R14,RDX
+	MOV RDI,RCX
+	TEST RDX,RDX
+	JNZ 0x140002b79
+	XOR ESI,ESI
+	MOV qword ptr [RCX],RSI
+	ADD RSP,0x48
+	POP R14
+	POP R13
+	POP RDI
+	POP RSI
+	RET
+	MOV qword ptr [RSP + 0x70],RBX
+	MOV RBX,-0x1
+	MOV qword ptr [RSP + 0x78],RBP
+	MOV qword ptr [RSP + 0x40],R15
+	NOP
+	INC RBX
+	CMP word ptr [RDX + RBX*0x2],0x0
+	JNZ 0x140002b90
+	INC EBX
+	LEA RBP,[RCX + 0x8]
+	LEA R15D,[RBX*0x4]
+	TEST RDI,RDI
+	JZ 0x140002d9e
+	TEST R15D,R15D
+	JS 0x140002d9e
+	TEST RBP,RBP
+	JZ 0x140002d9e
+	MOV RCX,qword ptr [RCX]
+	MOV qword ptr [RSP + 0x80],R12
+	CMP RCX,RBP
+	JZ 0x140002c81
+	CMP R15D,0x80
+	JLE 0x140002bfa
+	MOVSXD RDX,R15D
+	MOV R8D,0x1
+	CALL qword ptr [0x140005250]
+	TEST RAX,RAX
+	JZ 0x140002d61
+	JMP 0x140002c03
+	CALL qword ptr [0x140005258]
+	MOV RAX,RBP
+	MOV qword ptr [RDI],RAX
+	MOV R12,RDI
+	XOR ESI,ESI
+	MOV R9D,EBX
+	MOV qword ptr [RSP + 0x38],RSI
+	MOV R8,R14
+	MOV qword ptr [RSP + 0x30],RSI
+	XOR EDX,EDX
+	MOV dword ptr [RSP + 0x28],R15D
+	MOV ECX,R13D
+	MOV qword ptr [RSP + 0x20],RAX
+	CALL qword ptr [0x1400050c8]
+	TEST EAX,EAX
+	MOV R15D,ESI
+	SETZ R15B
+	TEST EAX,EAX
+	JNZ 0x140002d16
+	CALL qword ptr [0x1400050d0]
+	CMP EAX,0x7a
+	JNZ 0x140002d16
+	MOV qword ptr [RSP + 0x38],RSI
+	MOV R9D,EBX
+	MOV qword ptr [RSP + 0x30],RSI
+	MOV R8,R14
+	MOV dword ptr [RSP + 0x28],ESI
+	XOR EDX,EDX
+	MOV ECX,R13D
+	MOV qword ptr [RSP + 0x20],RSI
+	CALL qword ptr [0x1400050c8]
+	MOVSXD R15,EAX
+	TEST EAX,EAX
+	JS 0x140002d6c
+	JMP 0x140002cb0
+	CMP R15D,0x80
+	JLE 0x140002c00
+	MOVSXD RCX,R15D
+	MOV EDX,0x1
+	CALL qword ptr [0x140005260]
+	MOV qword ptr [RDI],RAX
+	MOV R12,RDI
+	TEST RAX,RAX
+	JZ 0x140002d77
+	JMP 0x140002c09
+	MOV RCX,qword ptr [RDI]
+	CMP RCX,RBP
+	JZ 0x140002d1d
+	CMP R15D,0x80
+	JLE 0x140002cdb
+	MOV RDX,R15
+	MOV R8D,0x1
+	CALL qword ptr [0x140005250]
+	TEST RAX,RAX
+	JZ 0x140002d77
+	JMP 0x140002ce4
+	CALL qword ptr [0x140005258]
+	MOV RAX,RBP
+	MOV qword ptr [R12],RAX
+	MOV qword ptr [RSP + 0x38],RSI
+	MOV R9D,EBX
+	MOV qword ptr [RSP + 0x30],RSI
+	MOV R8,R14
+	MOV dword ptr [RSP + 0x28],R15D
+	XOR EDX,EDX
+	MOV ECX,R13D
+	MOV qword ptr [RSP + 0x20],RAX
+	CALL qword ptr [0x1400050c8]
+	TEST EAX,EAX
+	MOV R15D,ESI
+	SETZ R15B
+	TEST R15D,R15D
+	JNZ 0x140002d82
+	JMP 0x140002d3f
+	CMP R15D,0x80
+	JLE 0x140002ce1
+	MOV RCX,R15
+	MOV EDX,0x1
+	CALL qword ptr [0x140005260]
+	MOV qword ptr [R12],RAX
+	TEST RAX,RAX
+	JZ 0x140002d93
+	JMP 0x140002ce8
+	MOV R12,qword ptr [RSP + 0x80]
+	MOV RBP,qword ptr [RSP + 0x78]
+	MOV RBX,qword ptr [RSP + 0x70]
+	MOV R15,qword ptr [RSP + 0x40]
+	ADD RSP,0x48
+	POP R14
+	POP R13
+	POP RDI
+	POP RSI
+	RET
+	MOV ECX,0x8007000e
+	CALL 0x140002f50
+	INT3
+	MOV ECX,0x80070057
+	CALL 0x140002f50
+	INT3
+	MOV ECX,0x8007000e
+	CALL 0x140002f50
+	INT3
+	MOV RCX,qword ptr [RDI]
+	MOV RDX,RBP
+	CALL 0x140002db0
+	CALL 0x140002f30
+	INT3
+	MOV ECX,0x8007000e
+	CALL 0x140002f50
+	INT3
+	MOV ECX,0x80070057
+	CALL 0x140002f50
+	INT3
+	
+FUN_140002db0:
+	CMP RCX,RDX
+	JZ 0x140002dbc
+	JMP qword ptr [0x140005258]
+	RET
+	
+FUN_140002dc0:
+	PUSH RBX
+	PUSH RSI
+	PUSH R14
+	PUSH R15
+	SUB RSP,0x28
+	MOV RBX,0x7fffffffffffffff
+	MOV R15,R9
+	MOV R14,RDX
+	MOV RSI,RCX
+	CMP RDX,RBX
+	JA 0x140002ee8
+	MOV qword ptr [RSP + 0x60],RBP
+	OR RDX,0xf
+	MOV RBP,qword ptr [RCX + 0x18]
+	MOV qword ptr [RSP + 0x20],RDI
+	CMP RDX,RBX
+	JA 0x140002e38
+	MOV RCX,RBP
+	MOV RAX,RBX
+	SHR RCX,0x1
+	SUB RAX,RCX
+	CMP RBP,RAX
+	JA 0x140002e38
+	LEA RAX,[RCX + RBP*0x1]
+	MOV RBX,RDX
+	CMP RDX,RAX
+	CMOVC RBX,RAX
+	LEA RAX,[RBX + 0x1]
+	CMP RAX,0x1000
+	JC 0x140002e63
+	LEA RCX,[RAX + 0x27]
+	CMP RCX,RAX
+	JBE 0x140002eee
+	JMP 0x140002e46
+	MOV RCX,-0x8000000000000000
+	ADD RCX,0x27
+	CALL qword ptr [0x140005720]
+	TEST RAX,RAX
+	JZ 0x140002ee1
+	LEA RDI,[RAX + 0x27]
+	AND RDI,-0x20
+	MOV qword ptr [RDI + -0x8],RAX
+	JMP 0x140002e78
+	TEST RAX,RAX
+	JZ 0x140002e76
+	MOV RCX,RAX
+	CALL qword ptr [0x140005720]
+	MOV RDI,RAX
+	JMP 0x140002e78
+	XOR EDI,EDI
+	MOV R8,R14
+	MOV qword ptr [RSI + 0x10],R14
+	MOV RDX,R15
+	MOV qword ptr [RSI + 0x18],RBX
+	MOV RCX,RDI
+	CALL 0x1400041ff
+	MOV byte ptr [RDI + R14*0x1],0x0
+	CMP RBP,0xf
+	JBE 0x140002ec6
+	MOV RCX,qword ptr [RSI]
+	LEA RDX,[RBP + 0x1]
+	CMP RDX,0x1000
+	JC 0x140002ec1
+	MOV R8,qword ptr [RCX + -0x8]
+	ADD RDX,0x27
+	SUB RCX,R8
+	LEA RAX,[RCX + -0x8]
+	CMP RAX,0x1f
+	JA 0x140002ee1
+	MOV RCX,R8
+	CALL 0x1400037dc
+	MOV qword ptr [RSI],RDI
+	MOV RAX,RSI
+	MOV RBP,qword ptr [RSP + 0x60]
+	MOV RDI,qword ptr [RSP + 0x20]
+	ADD RSP,0x28
+	POP R15
+	POP R14
+	POP RSI
+	POP RBX
+	RET
+	CALL qword ptr [0x1400052b8]
+	CALL 0x140001690
+	INT3
+	CALL 0x1400015f0
+	INT3
+	
+FUN_140002ef4:
+	MOVSXD RAX,dword ptr [RCX + -0x4]
+	SUB RCX,RAX
+	JMP 0x140002ab0
+	
+FUN_140002f00:
+	MOVZX EDX,DX
+	JMP qword ptr [0x140005898]
+	
+FUN_140002f10:
+	MOV RCX,qword ptr [RCX + 0x40]
+	MOV EDX,0x1
+	JMP qword ptr [0x1400051d0]
+	
+FUN_140002f20:
+	MOV RCX,qword ptr [RCX + 0x40]
+	XOR EDX,EDX
+	JMP qword ptr [0x1400051d0]
+	
+FUN_140002f30:
+	SUB RSP,0x28
+	CALL qword ptr [0x1400050d0]
+	TEST EAX,EAX
+	JLE 0x140002f46
+	MOVZX EAX,AX
+	OR EAX,0x80070000
+	MOV ECX,EAX
+	CALL 0x140002f50
+	INT3
+	
+FUN_140002f50:
+	SUB RSP,0x28
+	CMP ECX,0x8007000e
+	JNZ 0x140002f63
+	CALL qword ptr [0x1400054c8]
+	INT3
+	CALL qword ptr [0x1400054d0]
+	INT3
+	
+InitializeCriticalSectionEx:
+	JMP qword ptr [0x1400050e8]
+	
+operator_delete:
+	JMP qword ptr [0x1400058a0]
+	
+GetThisMessageMap:
+	JMP qword ptr [0x140005880]
+	
+DoModal:
+	JMP qword ptr [0x1400056f0]
+	
+GetRuntimeClass:
+	JMP qword ptr [0x1400056b8]
+	
+GetRuntimeClass:
+	JMP qword ptr [0x1400056b0]
+	
+GetRuntimeClass:
+	JMP qword ptr [0x1400056a0]
+	
+OnCmdMsg:
+	JMP qword ptr [0x140005698]
+	
+OnFinalRelease:
+	JMP qword ptr [0x140005690]
+	
+IsInvokeAllowed:
+	JMP qword ptr [0x140005688]
+	
+GetDispatchIID:
+	JMP qword ptr [0x140005680]
+	
+GetTypeInfoCount:
+	JMP qword ptr [0x140005678]
+	
+GetTypeLibCache:
+	JMP qword ptr [0x140005670]
+	
+GetTypeLib:
+	JMP qword ptr [0x140005668]
+	
+GetCommandMap:
+	JMP qword ptr [0x140005660]
+	
+GetDispatchMap:
+	JMP qword ptr [0x140005658]
+	
+GetConnectionMap:
+	JMP qword ptr [0x140005650]
+	
+GetInterfaceMap:
+	JMP qword ptr [0x140005648]
+	
+GetEventSinkMap:
+	JMP qword ptr [0x140005640]
+	
+OnCreateAggregates:
+	JMP qword ptr [0x140005638]
+	
+GetInterfaceHook:
+	JMP qword ptr [0x140005630]
+	
+GetExtraConnectionPoints:
+	JMP qword ptr [0x140005628]
+	
+GetConnectionHook:
+	JMP qword ptr [0x140005620]
+	
+Run:
+	JMP qword ptr [0x140005618]
+	
+PreTranslateMessage:
+	JMP qword ptr [0x140005610]
+	
+PumpMessage:
+	JMP qword ptr [0x140005608]
+	
+OnIdle:
+	JMP qword ptr [0x140005600]
+	
+IsIdleMessage:
+	JMP qword ptr [0x1400055f8]
+	
+ExitInstance:
+	JMP qword ptr [0x1400055f0]
+	
+ProcessWndProcException:
+	JMP qword ptr [0x1400055e8]
+	
+ProcessMessageFilter:
+	JMP qword ptr [0x1400055e0]
+	
+GetMainWnd:
+	JMP qword ptr [0x1400055d8]
+	
+Delete:
+	JMP qword ptr [0x1400055d0]
+	
+GetProfileIntW:
+	JMP qword ptr [0x1400055c8]
+	
+WriteProfileInt:
+	JMP qword ptr [0x1400055c0]
+	
+GetProfileStringW:
+	JMP qword ptr [0x1400055a8]
+	
+WriteProfileStringW:
+	JMP qword ptr [0x1400055a0]
+	
+GetProfileBinary:
+	JMP qword ptr [0x140005598]
+	
+WriteProfileBinary:
+	JMP qword ptr [0x140005590]
+	
+InitLibId:
+	JMP qword ptr [0x140005588]
+	
+Register:
+	JMP qword ptr [0x140005580]
+	
+Unregister:
+	JMP qword ptr [0x140005578]
+	
+OpenDocumentFile:
+	JMP qword ptr [0x140005570]
+	
+OpenDocumentFile:
+	JMP qword ptr [0x140005568]
+	
+AddToRecentFileList:
+	JMP qword ptr [0x140005560]
+	
+InitApplication:
+	JMP qword ptr [0x140005558]
+	
+SaveAllModified:
+	JMP qword ptr [0x140005550]
+	
+DoMessageBox:
+	JMP qword ptr [0x140005548]
+	
+DoWaitCursor:
+	JMP qword ptr [0x140005540]
+	
+OnDDECommand:
+	JMP qword ptr [0x140005538]
+	
+WinHelpW:
+	JMP qword ptr [0x140005530]
+	
+HtmlHelpW:
+	JMP qword ptr [0x140005870]
+	
+WinHelpInternal:
+	JMP qword ptr [0x140005520]
+	
+RegisterWithRestartManager:
+	JMP qword ptr [0x140005518]
+	
+RegisterWithRestartManager:
+	JMP qword ptr [0x140005510]
+	
+ApplicationRecoveryCallback:
+	JMP qword ptr [0x140005508]
+	
+GetDataRecoveryHandler:
+	JMP qword ptr [0x140005500]
+	
+IsTaskbarInteractionEnabled:
+	JMP qword ptr [0x1400054f8]
+	
+RestartInstance:
+	JMP qword ptr [0x1400054f0]
+	
+LoadAppLangResourceDLL:
+	JMP qword ptr [0x1400054e8]
+	
+LoadSysPolicies:
+	JMP qword ptr [0x1400054e0]
+	
+GetThisMessageMap:
+	JMP qword ptr [0x1400054c0]
+	
+AfxGetModuleState:
+	JMP qword ptr [0x1400054a0]
+	
+OnInitDialog:
+	JMP qword ptr [0x140005490]
+	
+OnOK:
+	JMP qword ptr [0x140005460]
+	
+GetRuntimeClass:
+	JMP qword ptr [0x140005440]
+	
+OnCmdMsg:
+	JMP qword ptr [0x140005438]
+	
+OnFinalRelease:
+	JMP qword ptr [0x140005430]
+	
+GetInterfaceMap:
+	JMP qword ptr [0x140005428]
+	
+PreSubclassWindow:
+	JMP qword ptr [0x140005420]
+	
+Create:
+	JMP qword ptr [0x140005418]
+	
+CreateEx:
+	JMP qword ptr [0x140005410]
+	
+CreateEx:
+	JMP qword ptr [0x140005408]
+	
+DestroyWindow:
+	JMP qword ptr [0x140005400]
+	
+PreCreateWindow:
+	JMP qword ptr [0x1400053f8]
+	
+CalcWindowRect:
+	JMP qword ptr [0x1400053f0]
+	
+GetMenu:
+	JMP qword ptr [0x1400053e8]
+	
+SetMenu:
+	JMP qword ptr [0x1400053e0]
+	
+OnToolHitTest:
+	JMP qword ptr [0x1400053d8]
+	
+GetScrollBarCtrl:
+	JMP qword ptr [0x1400053d0]
+	
+WinHelpW:
+	JMP qword ptr [0x1400053c8]
+	
+HtmlHelpW:
+	JMP qword ptr [0x1400053c0]
+	
+WinHelpInternal:
+	JMP qword ptr [0x1400053b8]
+	
+ContinueModal:
+	JMP qword ptr [0x1400053b0]
+	
+EndModalLoop:
+	JMP qword ptr [0x1400053a8]
+	
+OnDrawIconicThumbnailOrLivePreview:
+	JMP qword ptr [0x1400053a0]
+	
+EnsureStdObj:
+	JMP qword ptr [0x140005398]
+	
+get_accParent:
+	JMP qword ptr [0x140005368]
+	
+get_accChildCount:
+	JMP qword ptr [0x140005878]
+	
+get_accChild:
+	JMP qword ptr [0x140005868]
+	
+get_accName:
+	JMP qword ptr [0x140005860]
+	
+get_accValue:
+	JMP qword ptr [0x140005858]
+	
+get_accDescription:
+	JMP qword ptr [0x140005850]
+	
+get_accRole:
+	JMP qword ptr [0x140005848]
+	
+get_accState:
+	JMP qword ptr [0x140005840]
+	
+get_accHelp:
+	JMP qword ptr [0x140005838]
+	
+get_accHelpTopic:
+	JMP qword ptr [0x140005830]
+	
+get_accKeyboardShortcut:
+	JMP qword ptr [0x140005828]
+	
+get_accFocus:
+	JMP qword ptr [0x140005820]
+	
+get_accSelection:
+	JMP qword ptr [0x140005818]
+	
+get_accDefaultAction:
+	JMP qword ptr [0x140005810]
+	
+accSelect:
+	JMP qword ptr [0x140005808]
+	
+accLocation:
+	JMP qword ptr [0x140005800]
+	
+accNavigate:
+	JMP qword ptr [0x1400057f8]
+	
+accHitTest:
+	JMP qword ptr [0x1400057f0]
+	
+accDoDefaultAction:
+	JMP qword ptr [0x1400057e8]
+	
+put_accName:
+	JMP qword ptr [0x1400057e0]
+	
+put_accValue:
+	JMP qword ptr [0x1400057d8]
+	
+SetProxy:
+	JMP qword ptr [0x1400057d0]
+	
+CreateAccessibleProxy:
+	JMP qword ptr [0x1400057c8]
+	
+OnCommand:
+	JMP qword ptr [0x1400057c0]
+	
+OnNotify:
+	JMP qword ptr [0x1400057b8]
+	
+GetSuperWndProcAddr:
+	JMP qword ptr [0x1400057b0]
+	
+PreTranslateMessage:
+	JMP qword ptr [0x1400057a8]
+	
+OnAmbientProperty:
+	JMP qword ptr [0x1400057a0]
+	
+WindowProc:
+	JMP qword ptr [0x140005798]
+	
+OnWndMsg:
+	JMP qword ptr [0x140005790]
+	
+DefWindowProcW:
+	JMP qword ptr [0x140005788]
+	
+PostNcDestroy:
+	JMP qword ptr [0x140005780]
+	
+OnChildNotify:
+	JMP qword ptr [0x140005778]
+	
+OnTouchInputs:
+	JMP qword ptr [0x140005770]
+	
+OnTouchInput:
+	JMP qword ptr [0x140005768]
+	
+GetGestureStatus:
+	JMP qword ptr [0x140005760]
+	
+OnGestureZoom:
+	JMP qword ptr [0x140005758]
+	
+OnGesturePan:
+	JMP qword ptr [0x140005750]
+	
+OnGestureRotate:
+	JMP qword ptr [0x140005748]
+	
+OnGestureTwoFingerTap:
+	JMP qword ptr [0x1400056f8]
+	
+OnGesturePressAndTap:
+	JMP qword ptr [0x140005528]
+	
+ResizeDynamicLayout:
+	JMP qword ptr [0x1400055b8]
+	
+CheckAutoCenter:
+	JMP qword ptr [0x140005480]
+	
+IsFrameWnd:
+	JMP qword ptr [0x140005340]
+	
+CreateControlContainer:
+	JMP qword ptr [0x140005348]
+	
+CreateControlSite:
+	JMP qword ptr [0x140005350]
+	
+SetOccDialogInfo:
+	JMP qword ptr [0x140005358]
+	
+GetOccDialogInfo:
+	JMP qword ptr [0x140005360]
+	
+Create:
+	JMP qword ptr [0x140005898]
+	
+CreateIndirect:
+	JMP qword ptr [0x140005370]
+	
+CreateIndirect:
+	JMP qword ptr [0x140005378]
+	
+OnSetFont:
+	JMP qword ptr [0x140005380]
+	
+OnCancel:
+	JMP qword ptr [0x140005388]
+	
+PreInitDialog:
+	JMP qword ptr [0x140005390]
+	
+FUN_1400032cc:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV ECX,0x2
+	CALL 0x1400040c2
+	CALL 0x140003898
+	MOV ECX,EAX
+	CALL 0x1400040f8
+	CALL 0x140001370
+	MOV EBX,EAX
+	CALL 0x14000411c
+	MOV ECX,0x1
+	MOV dword ptr [RAX],EBX
+	CALL 0x1400035e8
+	TEST AL,AL
+	JZ 0x140003377
+	CALL 0x140003b50
+	LEA RCX,[0x140003b8c]
+	CALL 0x140003798
+	CALL 0x140003890
+	MOV ECX,EAX
+	CALL 0x1400040ce
+	TEST EAX,EAX
+	JNZ 0x140003377
+	CALL 0x1400038a0
+	CALL 0x1400038e0
+	TEST EAX,EAX
+	JZ 0x14000333f
+	LEA RCX,[0x140001370]
+	CALL 0x1400040c8
+	CALL 0x140001350
+	CALL 0x140001350
+	CALL 0x140001370
+	MOV ECX,EAX
+	CALL 0x140004110
+	CALL 0x1400038b0
+	TEST AL,AL
+	JZ 0x140003363
+	CALL 0x1400040d4
+	CALL 0x140001370
+	CALL 0x140003a88
+	TEST EAX,EAX
+	JNZ 0x140003377
+	ADD RSP,0x20
+	POP RBX
+	RET
+	MOV ECX,0x7
+	CALL 0x140003904
+	INT3
+	
+FUN_140003384:
+	SUB RSP,0x28
+	CALL 0x1400038c4
+	XOR EAX,EAX
+	ADD RSP,0x28
+	RET
+	
+FUN_1400033b0:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x30
+	MOV ECX,0x1
+	CALL 0x1400035ac
+	TEST AL,AL
+	JZ 0x1400034fc
+	XOR DIL,DIL
+	MOV byte ptr [RSP + 0x20],DIL
+	CALL 0x140003570
+	MOV BL,AL
+	MOV ECX,dword ptr [0x14000a5d8]
+	CMP ECX,0x1
+	JZ 0x140003507
+	TEST ECX,ECX
+	JNZ 0x140003438
+	MOV dword ptr [0x14000a5d8],0x1
+	LEA RDX,[0x140005930]
+	LEA RCX,[0x140005918]
+	CALL 0x1400040e6
+	TEST EAX,EAX
+	JZ 0x140003419
+	MOV EAX,0xff
+	JMP 0x1400034f1
+	LEA RDX,[0x140005910]
+	LEA RCX,[0x1400058e8]
+	CALL 0x1400040e0
+	MOV dword ptr [0x14000a5d8],0x2
+	JMP 0x140003440
+	MOV DIL,0x1
+	MOV byte ptr [RSP + 0x20],DIL
+	MOV CL,BL
+	CALL 0x14000370c
+	CALL 0x1400038ec
+	MOV RBX,RAX
+	CMP qword ptr [RAX],0x0
+	JZ 0x140003473
+	MOV RCX,RAX
+	CALL 0x140003674
+	TEST AL,AL
+	JZ 0x140003473
+	XOR R8D,R8D
+	LEA EDX,[R8 + 0x2]
+	XOR ECX,ECX
+	MOV RAX,qword ptr [RBX]
+	CALL qword ptr [0x1400058c0]
+	CALL 0x1400038f4
+	MOV RBX,RAX
+	CMP qword ptr [RAX],0x0
+	JZ 0x140003495
+	MOV RCX,RAX
+	CALL 0x140003674
+	TEST AL,AL
+	JZ 0x140003495
+	MOV RCX,qword ptr [RBX]
+	CALL 0x14000410a
+	CALL 0x140003a4c
+	MOVZX EBX,AX
+	CALL 0x1400040da
+	MOV R9D,EBX
+	MOV R8,RAX
+	XOR EDX,EDX
+	LEA RCX,[0x140000000]
+	CALL 0x140004168
+	MOV EBX,EAX
+	CALL 0x140003a90
+	TEST AL,AL
+	JZ 0x140003511
+	TEST DIL,DIL
+	JNZ 0x1400034cb
+	CALL 0x1400040fe
+	XOR EDX,EDX
+	MOV CL,0x1
+	CALL 0x140003730
+	MOV EAX,EBX
+	JMP 0x1400034f1
+	MOV RBX,qword ptr [RSP + 0x40]
+	ADD RSP,0x30
+	POP RDI
+	RET
+	MOV ECX,0x7
+	CALL 0x140003904
+	NOP
+	MOV ECX,0x7
+	CALL 0x140003904
+	MOV ECX,EBX
+	CALL 0x1400040ec
+	
+entry:
+	SUB RSP,0x28
+	CALL 0x1400037e4
+	ADD RSP,0x28
+	JMP 0x1400033b0
+	
+FUN_140003550:
+	CMP RCX,qword ptr [0x14000a040]
+	JNZ 0x140003569
+	ROL RCX,0x10
+	TEST CX,0xffff
+	JNZ 0x140003565
+	RET
+	ROR RCX,0x10
+	JMP 0x140003bfc
+	
+__scrt_acquire_startup_lock:
+	SUB RSP,0x28
+	CALL 0x140003ef0
+	TEST EAX,EAX
+	JZ 0x14000359e
+	MOV RAX,qword ptr GS:[0x30]
+	MOV RCX,qword ptr [RAX + 0x8]
+	JMP 0x140003591
+	CMP RCX,RAX
+	JZ 0x1400035a5
+	XOR EAX,EAX
+	CMPXCHG.LOCK qword ptr [0x14000a5e0],RCX
+	JNZ 0x14000358c
+	XOR AL,AL
+	ADD RSP,0x28
+	RET
+	MOV AL,0x1
+	JMP 0x1400035a0
+	
+FUN_1400035ac:
+	SUB RSP,0x28
+	TEST ECX,ECX
+	JNZ 0x1400035bb
+	MOV byte ptr [0x14000a5e8],0x1
+	CALL 0x140003d44
+	CALL 0x1400038b0
+	TEST AL,AL
+	JNZ 0x1400035cd
+	XOR AL,AL
+	JMP 0x1400035e1
+	CALL 0x1400038b0
+	TEST AL,AL
+	JNZ 0x1400035df
+	XOR ECX,ECX
+	CALL 0x1400038b0
+	JMP 0x1400035c9
+	MOV AL,0x1
+	ADD RSP,0x28
+	RET
+	
+__scrt_initialize_onexit_tables:
+	PUSH RBX
+	SUB RSP,0x20
+	CMP byte ptr [0x14000a5e9],0x0
+	MOV EBX,ECX
+	JNZ 0x140003660
+	CMP ECX,0x1
+	JA 0x140003668
+	CALL 0x140003ef0
+	TEST EAX,EAX
+	JZ 0x14000362f
+	TEST EBX,EBX
+	JNZ 0x14000362f
+	LEA RCX,[0x14000a5f0]
+	CALL 0x140004122
+	TEST EAX,EAX
+	JNZ 0x14000362b
+	LEA RCX,[0x14000a608]
+	CALL 0x140004122
+	TEST EAX,EAX
+	JZ 0x140003659
+	XOR AL,AL
+	JMP 0x140003662
+	MOVDQA XMM0,xmmword ptr [0x140005970]
+	OR RAX,-0x1
+	MOVDQU xmmword ptr [0x14000a5f0],XMM0
+	MOV qword ptr [0x14000a600],RAX
+	MOVDQU xmmword ptr [0x14000a608],XMM0
+	MOV qword ptr [0x14000a618],RAX
+	MOV byte ptr [0x14000a5e9],0x1
+	MOV AL,0x1
+	ADD RSP,0x20
+	POP RBX
+	RET
+	MOV ECX,0x5
+	CALL 0x140003904
+	INT3
+	
+FUN_140003674:
+	SUB RSP,0x18
+	MOV R8,RCX
+	MOV EAX,0x5a4d
+	CMP word ptr [0x140000000],AX
+	JNZ 0x140003701
+	MOVSXD RCX,dword ptr [0x14000003c]
+	LEA RDX,[0x140000000]
+	ADD RCX,RDX
+	CMP dword ptr [RCX],0x4550
+	JNZ 0x140003701
+	MOV EAX,0x20b
+	CMP word ptr [RCX + 0x18],AX
+	JNZ 0x140003701
+	SUB R8,RDX
+	MOVZX EDX,word ptr [RCX + 0x14]
+	ADD RDX,0x18
+	ADD RDX,RCX
+	MOVZX EAX,word ptr [RCX + 0x6]
+	LEA RCX,[RAX + RAX*0x4]
+	LEA R9,[RDX + RCX*0x8]
+	MOV qword ptr [RSP],RDX
+	CMP RDX,R9
+	JZ 0x1400036e8
+	MOV ECX,dword ptr [RDX + 0xc]
+	CMP R8,RCX
+	JC 0x1400036e2
+	MOV EAX,dword ptr [RDX + 0x8]
+	ADD EAX,ECX
+	CMP R8,RAX
+	JC 0x1400036ea
+	ADD RDX,0x28
+	JMP 0x1400036c7
+	XOR EDX,EDX
+	TEST RDX,RDX
+	JNZ 0x1400036f3
+	XOR AL,AL
+	JMP 0x140003707
+	CMP dword ptr [RDX + 0x24],0x0
+	JGE 0x1400036fd
+	XOR AL,AL
+	JMP 0x140003707
+	MOV AL,0x1
+	JMP 0x140003707
+	XOR AL,AL
+	JMP 0x140003707
+	ADD RSP,0x18
+	RET
+	
+__scrt_release_startup_lock:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV BL,CL
+	CALL 0x140003ef0
+	XOR EDX,EDX
+	TEST EAX,EAX
+	JZ 0x14000372a
+	TEST BL,BL
+	JNZ 0x14000372a
+	XCHG qword ptr [0x14000a5e0],RDX
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+__scrt_uninitialize_crt:
+	PUSH RBX
+	SUB RSP,0x20
+	CMP byte ptr [0x14000a5e8],0x0
+	MOV BL,CL
+	JZ 0x140003745
+	TEST DL,DL
+	JNZ 0x140003751
+	CALL 0x1400038b0
+	MOV CL,BL
+	CALL 0x1400038b0
+	MOV AL,0x1
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+_onexit:
+	PUSH RBX
+	SUB RSP,0x20
+	CMP qword ptr [0x14000a5f0],-0x1
+	MOV RBX,RCX
+	JNZ 0x140003776
+	CALL 0x14000412e
+	JMP 0x140003785
+	MOV RDX,RBX
+	LEA RCX,[0x14000a5f0]
+	CALL 0x140004128
+	XOR EDX,EDX
+	TEST EAX,EAX
+	CMOVZ RDX,RBX
+	MOV RAX,RDX
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+atexit:
+	SUB RSP,0x28
+	CALL 0x14000375c
+	NEG RAX
+	SBB EAX,EAX
+	NEG EAX
+	DEC EAX
+	ADD RSP,0x28
+	RET
+	
+FUN_1400037b0:
+	PUSH RBX
+	SUB RSP,0x20
+	LEA RAX,[0x140005988]
+	MOV RBX,RCX
+	MOV qword ptr [RCX],RAX
+	TEST DL,0x1
+	JZ 0x1400037d2
+	MOV EDX,0x18
+	CALL 0x1400037dc
+	MOV RAX,RBX
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+operator_delete:
+	JMP 0x140002f77
+	
+__security_init_cookie:
+	MOV qword ptr [RSP + 0x18],RBX
+	PUSH RBP
+	MOV RBP,RSP
+	SUB RSP,0x30
+	MOV RAX,qword ptr [0x14000a040]
+	MOV RBX,0x2b992ddfa232
+	CMP RAX,RBX
+	JNZ 0x14000387b
+	AND qword ptr [RBP + 0x10],0x0
+	LEA RCX,[RBP + 0x10]
+	CALL qword ptr [0x140005060]
+	MOV RAX,qword ptr [RBP + 0x10]
+	MOV qword ptr [RBP + -0x10],RAX
+	CALL qword ptr [0x140005058]
+	MOV EAX,EAX
+	XOR qword ptr [RBP + -0x10],RAX
+	CALL qword ptr [0x1400050e0]
+	MOV EAX,EAX
+	LEA RCX,[RBP + 0x18]
+	XOR qword ptr [RBP + -0x10],RAX
+	CALL qword ptr [0x140005050]
+	MOV EAX,dword ptr [RBP + 0x18]
+	LEA RCX,[RBP + -0x10]
+	SHL RAX,0x20
+	XOR RAX,qword ptr [RBP + 0x18]
+	XOR RAX,qword ptr [RBP + -0x10]
+	XOR RAX,RCX
+	MOV RCX,0xffffffffffff
+	AND RAX,RCX
+	MOV RCX,0x2b992ddfa233
+	CMP RAX,RBX
+	CMOVZ RAX,RCX
+	MOV qword ptr [0x14000a040],RAX
+	MOV RBX,qword ptr [RSP + 0x50]
+	NOT RAX
+	MOV qword ptr [0x14000a080],RAX
+	ADD RSP,0x30
+	POP RBP
+	RET
+	
+FUN_140003890:
+	MOV EAX,0x1
+	RET
+	
+FUN_140003898:
+	MOV EAX,0x4000
+	RET
+	
+FUN_1400038a0:
+	LEA RCX,[0x14000a630]
+	JMP qword ptr [0x140005068]
+	
+FUN_1400038b0:
+	MOV AL,0x1
+	RET
+	
+FUN_1400038b4:
+	LEA RAX,[0x14000a640]
+	RET
+	
+FUN_1400038bc:
+	LEA RAX,[0x14000a648]
+	RET
+	
+FUN_1400038c4:
+	SUB RSP,0x28
+	CALL 0x1400038b4
+	OR qword ptr [RAX],0x24
+	CALL 0x1400038bc
+	OR qword ptr [RAX],0x2
+	ADD RSP,0x28
+	RET
+	
+FUN_1400038e0:
+	XOR EAX,EAX
+	CMP dword ptr [0x14000a088],EAX
+	SETZ AL
+	RET
+	
+FUN_1400038ec:
+	LEA RAX,[0x14000add0]
+	RET
+	
+FUN_1400038f4:
+	LEA RAX,[0x14000adc8]
+	RET
+	
+FUN_1400038fc:
+	AND dword ptr [0x14000a650],0x0
+	RET
+	
+FUN_140003904:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RBP
+	LEA RBP,[RSP + -0x4c0]
+	SUB RSP,0x5c0
+	MOV EBX,ECX
+	MOV ECX,0x17
+	CALL qword ptr [0x1400050a8]
+	TEST EAX,EAX
+	JZ 0x14000392e
+	MOV ECX,EBX
+	INT 0x29
+	MOV ECX,0x3
+	CALL 0x1400038fc
+	XOR EDX,EDX
+	LEA RCX,[RBP + -0x10]
+	MOV R8D,0x4d0
+	CALL 0x140004098
+	LEA RCX,[RBP + -0x10]
+	CALL qword ptr [0x140005070]
+	MOV RBX,qword ptr [RBP + 0xe8]
+	LEA RDX,[RBP + 0x4d8]
+	MOV RCX,RBX
+	XOR R8D,R8D
+	CALL qword ptr [0x140005078]
+	TEST RAX,RAX
+	JZ 0x1400039ae
+	AND qword ptr [RSP + 0x38],0x0
+	LEA RCX,[RBP + 0x4e0]
+	MOV RDX,qword ptr [RBP + 0x4d8]
+	MOV R9,RAX
+	MOV qword ptr [RSP + 0x30],RCX
+	MOV R8,RBX
+	LEA RCX,[RBP + 0x4e8]
+	MOV qword ptr [RSP + 0x28],RCX
+	LEA RCX,[RBP + -0x10]
+	MOV qword ptr [RSP + 0x20],RCX
+	XOR ECX,ECX
+	CALL qword ptr [0x140005080]
+	MOV RAX,qword ptr [RBP + 0x4c8]
+	LEA RCX,[RSP + 0x50]
+	MOV qword ptr [RBP + 0xe8],RAX
+	XOR EDX,EDX
+	LEA RAX,[RBP + 0x4c8]
+	MOV R8D,0x98
+	ADD RAX,0x8
+	MOV qword ptr [RBP + 0x88],RAX
+	CALL 0x140004098
+	MOV RAX,qword ptr [RBP + 0x4c8]
+	MOV qword ptr [RSP + 0x60],RAX
+	MOV dword ptr [RSP + 0x50],0x40000015
+	MOV dword ptr [RSP + 0x54],0x1
+	CALL qword ptr [0x140005088]
+	MOV EBX,EAX
+	XOR ECX,ECX
+	LEA RAX,[RSP + 0x50]
+	MOV qword ptr [RSP + 0x40],RAX
+	LEA RAX,[RBP + -0x10]
+	MOV qword ptr [RSP + 0x48],RAX
+	CALL qword ptr [0x140005098]
+	LEA RCX,[RSP + 0x40]
+	CALL qword ptr [0x140005090]
+	TEST EAX,EAX
+	JNZ 0x140003a3b
+	CMP EBX,0x1
+	JZ 0x140003a3b
+	LEA ECX,[RAX + 0x3]
+	CALL 0x1400038fc
+	MOV RBX,qword ptr [RSP + 0x5d0]
+	ADD RSP,0x5c0
+	POP RBP
+	RET
+	
+__scrt_get_show_window_mode:
+	SUB RSP,0x98
+	XOR EDX,EDX
+	LEA RCX,[RSP + 0x20]
+	LEA R8D,[RDX + 0x68]
+	CALL 0x140004098
+	LEA RCX,[RSP + 0x20]
+	CALL qword ptr [0x1400050a0]
+	TEST byte ptr [RSP + 0x5c],0x1
+	MOV EAX,0xa
+	CMOVNZ AX,word ptr [RSP + 0x60]
+	ADD RSP,0x98
+	RET
+	
+thunk_FUN_140001370:
+	JMP 0x140001370
+	
+FUN_140003a90:
+	SUB RSP,0x28
+	XOR ECX,ECX
+	CALL qword ptr [0x1400050b0]
+	TEST RAX,RAX
+	JZ 0x140003ada
+	MOV ECX,0x5a4d
+	CMP word ptr [RAX],CX
+	JNZ 0x140003ada
+	MOVSXD RCX,dword ptr [RAX + 0x3c]
+	ADD RCX,RAX
+	CMP dword ptr [RCX],0x4550
+	JNZ 0x140003ada
+	MOV EAX,0x20b
+	CMP word ptr [RCX + 0x18],AX
+	JNZ 0x140003ada
+	CMP dword ptr [RCX + 0x84],0xe
+	JBE 0x140003ada
+	CMP dword ptr [RCX + 0xf8],0x0
+	SETNZ AL
+	JMP 0x140003adc
+	XOR AL,AL
+	ADD RSP,0x28
+	RET
+	
+FUN_140003ae4:
+	LEA RCX,[0x140003af4]
+	JMP qword ptr [0x140005098]
+	
+FUN_140003b50:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	LEA RBX,[0x140007a88]
+	LEA RDI,[0x140007a88]
+	JMP 0x140003b7c
+	MOV RAX,qword ptr [RBX]
+	TEST RAX,RAX
+	JZ 0x140003b78
+	CALL qword ptr [0x1400058c0]
+	ADD RBX,0x8
+	CMP RBX,RDI
+	JC 0x140003b6a
+	MOV RBX,qword ptr [RSP + 0x30]
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+__raise_securityfailure:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	XOR ECX,ECX
+	CALL qword ptr [0x140005098]
+	MOV RCX,RBX
+	CALL qword ptr [0x140005090]
+	CALL qword ptr [0x1400050b8]
+	MOV RCX,RAX
+	MOV EDX,0xc0000409
+	ADD RSP,0x20
+	POP RBX
+	JMP qword ptr [0x1400050c0]
+	
+FUN_140003bfc:
+	MOV qword ptr [RSP + 0x8],RCX
+	SUB RSP,0x38
+	MOV ECX,0x17
+	CALL qword ptr [0x1400050a8]
+	TEST EAX,EAX
+	JZ 0x140003c1b
+	MOV ECX,0x2
+	INT 0x29
+	LEA RCX,[0x14000a700]
+	CALL 0x140003cd0
+	MOV RAX,qword ptr [RSP + 0x38]
+	MOV qword ptr [0x14000a7f8],RAX
+	LEA RAX,[RSP + 0x38]
+	ADD RAX,0x8
+	MOV qword ptr [0x14000a798],RAX
+	MOV RAX,qword ptr [0x14000a7f8]
+	MOV qword ptr [0x14000a670],RAX
+	MOV RAX,qword ptr [RSP + 0x40]
+	MOV qword ptr [0x14000a780],RAX
+	MOV dword ptr [0x14000a660],0xc0000409
+	MOV dword ptr [0x14000a664],0x1
+	MOV dword ptr [0x14000a678],0x1
+	MOV EAX,0x8
+	IMUL RAX,RAX,0x0
+	LEA RCX,[0x14000a680]
+	MOV qword ptr [RCX + RAX*0x1],0x2
+	MOV EAX,0x8
+	IMUL RAX,RAX,0x0
+	MOV RCX,qword ptr [0x14000a040]
+	MOV qword ptr [RSP + RAX*0x1 + 0x20],RCX
+	MOV EAX,0x8
+	IMUL RAX,RAX,0x1
+	MOV RCX,qword ptr [0x14000a080]
+	MOV qword ptr [RSP + RAX*0x1 + 0x20],RCX
+	LEA RCX,[0x140005990]
+	CALL 0x140003bc8
+	ADD RSP,0x38
+	RET
+	
+capture_previous_context:
+	PUSH RBX
+	PUSH RSI
+	PUSH RDI
+	SUB RSP,0x40
+	MOV RBX,RCX
+	CALL qword ptr [0x140005070]
+	MOV RSI,qword ptr [RBX + 0xf8]
+	XOR EDI,EDI
+	XOR R8D,R8D
+	LEA RDX,[RSP + 0x60]
+	MOV RCX,RSI
+	CALL qword ptr [0x140005078]
+	TEST RAX,RAX
+	JZ 0x140003d39
+	AND qword ptr [RSP + 0x38],0x0
+	LEA RCX,[RSP + 0x68]
+	MOV RDX,qword ptr [RSP + 0x60]
+	MOV R9,RAX
+	MOV qword ptr [RSP + 0x30],RCX
+	MOV R8,RSI
+	LEA RCX,[RSP + 0x70]
+	MOV qword ptr [RSP + 0x28],RCX
+	XOR ECX,ECX
+	MOV qword ptr [RSP + 0x20],RBX
+	CALL qword ptr [0x140005080]
+	INC EDI
+	CMP EDI,0x2
+	JL 0x140003cea
+	ADD RSP,0x40
+	POP RDI
+	POP RSI
+	POP RBX
+	RET
+	
+FUN_140003d44:
+	MOV qword ptr [RSP + 0x10],RBX
+	MOV qword ptr [RSP + 0x18],RSI
+	PUSH RDI
+	SUB RSP,0x10
+	XOR EAX,EAX
+	XOR ECX,ECX
+	CPUID
+	MOV R8D,ECX
+	XOR R11D,R11D
+	MOV R10D,EDX
+	XOR R8D,0x6c65746e
+	XOR R10D,0x49656e69
+	MOV R9D,EBX
+	MOV ESI,EAX
+	XOR ECX,ECX
+	LEA EAX,[R11 + 0x1]
+	OR R10D,R8D
+	CPUID
+	XOR R9D,0x756e6547
+	MOV dword ptr [RSP],EAX
+	OR R10D,R9D
+	MOV dword ptr [RSP + 0x4],EBX
+	MOV EDI,ECX
+	MOV dword ptr [RSP + 0x8],ECX
+	MOV dword ptr [RSP + 0xc],EDX
+	JNZ 0x140003df8
+	OR qword ptr [0x14000a0a0],-0x1
+	AND EAX,0xfff3ff0
+	MOV qword ptr [0x14000a098],0x8000
+	CMP EAX,0x106c0
+	JZ 0x140003de4
+	CMP EAX,0x20660
+	JZ 0x140003de4
+	CMP EAX,0x20670
+	JZ 0x140003de4
+	ADD EAX,0xfffcf9b0
+	CMP EAX,0x20
+	JA 0x140003df8
+	MOV RCX,0x100010001
+	BT RCX,RAX
+	JNC 0x140003df8
+	MOV R8D,dword ptr [0x14000abd0]
+	OR R8D,0x1
+	MOV dword ptr [0x14000abd0],R8D
+	JMP 0x140003dff
+	MOV R8D,dword ptr [0x14000abd0]
+	MOV EAX,0x7
+	LEA R9D,[RAX + -0x5]
+	CMP ESI,EAX
+	JL 0x140003e32
+	XOR ECX,ECX
+	CPUID
+	MOV dword ptr [RSP],EAX
+	MOV R11D,EBX
+	MOV dword ptr [RSP + 0x4],EBX
+	MOV dword ptr [RSP + 0x8],ECX
+	MOV dword ptr [RSP + 0xc],EDX
+	BT EBX,0x9
+	JNC 0x140003e32
+	OR R8D,R9D
+	MOV dword ptr [0x14000abd0],R8D
+	MOV dword ptr [0x14000a090],0x1
+	MOV dword ptr [0x14000a094],R9D
+	BT EDI,0x14
+	JNC 0x140003ede
+	MOV dword ptr [0x14000a090],R9D
+	MOV EBX,0x6
+	MOV dword ptr [0x14000a094],EBX
+	BT EDI,0x1b
+	JNC 0x140003ede
+	BT EDI,0x1c
+	JNC 0x140003ede
+	XOR ECX,ECX
+	XGETBV
+	SHL RDX,0x20
+	OR RDX,RAX
+	MOV qword ptr [RSP + 0x20],RDX
+	MOV RAX,qword ptr [RSP + 0x20]
+	AND AL,BL
+	CMP AL,BL
+	JNZ 0x140003ede
+	MOV EAX,dword ptr [0x14000a094]
+	OR EAX,0x8
+	MOV dword ptr [0x14000a090],0x3
+	MOV dword ptr [0x14000a094],EAX
+	TEST R11B,0x20
+	JZ 0x140003ede
+	OR EAX,0x20
+	MOV dword ptr [0x14000a090],0x5
+	MOV dword ptr [0x14000a094],EAX
+	MOV EAX,0xd0030000
+	AND R11D,EAX
+	CMP R11D,EAX
+	JNZ 0x140003ede
+	MOV RAX,qword ptr [RSP + 0x20]
+	AND AL,0xe0
+	CMP AL,0xe0
+	JNZ 0x140003ede
+	OR dword ptr [0x14000a094],0x40
+	MOV dword ptr [0x14000a090],EBX
+	MOV RBX,qword ptr [RSP + 0x28]
+	XOR EAX,EAX
+	MOV RSI,qword ptr [RSP + 0x30]
+	ADD RSP,0x10
+	POP RDI
+	RET
+	
+__scrt_is_ucrt_dll_in_use:
+	XOR EAX,EAX
+	CMP dword ptr [0x14000a0b0],EAX
+	SETNZ AL
+	RET
+	
+__GSHandlerCheckCommon:
+	PUSH RBX
+	MOV R11D,dword ptr [R8]
+	MOV RBX,RDX
+	AND R11D,0xfffffff8
+	MOV R9,RCX
+	TEST byte ptr [R8],0x4
+	MOV R10,RCX
+	JZ 0x140003f47
+	MOV EAX,dword ptr [R8 + 0x8]
+	MOVSXD R10,dword ptr [R8 + 0x4]
+	NEG EAX
+	ADD R10,RCX
+	MOVSXD RCX,EAX
+	AND R10,RCX
+	MOVSXD RAX,R11D
+	MOV RDX,qword ptr [RAX + R10*0x1]
+	MOV RAX,qword ptr [RBX + 0x10]
+	MOV ECX,dword ptr [RAX + 0x8]
+	MOV RAX,qword ptr [RBX + 0x8]
+	TEST byte ptr [RCX + RAX*0x1 + 0x3],0xf
+	JZ 0x140003f6b
+	MOVZX EAX,byte ptr [RCX + RAX*0x1 + 0x3]
+	AND EAX,0xfffffff0
+	ADD R9,RAX
+	XOR R9,RDX
+	MOV RCX,R9
+	POP RBX
+	JMP 0x140003550
+	
+CAtlBaseModule:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	XOR EDX,EDX
+	MOV RDI,RCX
+	LEA R8D,[RDX + 0x28]
+	ADD RCX,R8
+	CALL 0x140004098
+	AND qword ptr [RDI + 0x50],0x0
+	LEA RAX,[0x140000000]
+	AND dword ptr [RDI + 0x58],0x0
+	LEA RCX,[RDI + 0x28]
+	AND dword ptr [RDI + 0x5c],0x0
+	XOR R8D,R8D
+	MOV qword ptr [RDI + 0x10],RAX
+	XOR EDX,EDX
+	MOV qword ptr [RDI + 0x8],RAX
+	LEA RAX,[0x1400059a0]
+	MOV qword ptr [RDI + 0x20],RAX
+	MOV dword ptr [RDI],0x60
+	MOV dword ptr [RDI + 0x18],0xe00
+	CALL 0x140002f70
+	TEST EAX,EAX
+	JNZ 0x140004017
+	CALL qword ptr [0x1400050d0]
+	MOVZX ECX,AX
+	OR ECX,0x80070000
+	TEST EAX,EAX
+	CMOVLE ECX,EAX
+	TEST ECX,ECX
+	JNS 0x140004017
+	CALL qword ptr [0x140005088]
+	TEST EAX,EAX
+	JZ 0x140004010
+	LEA RCX,[0x1400059b0]
+	CALL qword ptr [0x1400050d8]
+	MOV byte ptr [0x14000ac4c],0x1
+	MOV RBX,qword ptr [RSP + 0x30]
+	MOV RAX,RDI
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+~CAtlBaseModule:
+	PUSH RBX
+	SUB RSP,0x20
+	MOV RBX,RCX
+	ADD RCX,0x28
+	CALL qword ptr [0x140005048]
+	MOV RCX,qword ptr [RBX + 0x50]
+	TEST RCX,RCX
+	JZ 0x14000404e
+	CALL 0x1400040b6
+	AND qword ptr [RBX + 0x50],0x0
+	AND dword ptr [RBX + 0x58],0x0
+	AND dword ptr [RBX + 0x5c],0x0
+	ADD RSP,0x20
+	POP RBX
+	RET
+	
+_Lock:
+	JMP qword ptr [0x140005160]
+	
+_Unlock:
+	JMP qword ptr [0x140005168]
+	
+showmanyc:
+	JMP qword ptr [0x140005170]
+	
+uflow:
+	JMP qword ptr [0x140005178]
+	
+xsgetn:
+	JMP qword ptr [0x140005180]
+	
+xsputn:
+	JMP qword ptr [0x140005150]
+	
+setbuf:
+	JMP qword ptr [0x1400050f8]
+	
+sync:
+	JMP qword ptr [0x140005188]
+	
+imbue:
+	JMP qword ptr [0x140005130]
+	
+__CxxFrameHandler4:
+	JMP qword ptr [0x140005240]
+	
+memset:
+	JMP qword ptr [0x1400051f8]
+	
+__current_exception:
+	JMP qword ptr [0x140005208]
+	
+__current_exception_context:
+	JMP qword ptr [0x140005210]
+	
+memmove:
+	JMP qword ptr [0x140005218]
+	
+free:
+	JMP qword ptr [0x140005258]
+	
+_seh_filter_exe:
+	JMP qword ptr [0x140005308]
+	
+_set_app_type:
+	JMP qword ptr [0x140005300]
+	
+__setusermatherr:
+	JMP qword ptr [0x140005288]
+	
+_configure_wide_argv:
+	JMP qword ptr [0x1400052f0]
+	
+_initialize_wide_environment:
+	JMP qword ptr [0x1400052e8]
+	
+_get_wide_winmain_command_line:
+	JMP qword ptr [0x1400052e0]
+	
+_initterm:
+	JMP qword ptr [0x1400052d8]
+	
+_initterm_e:
+	JMP qword ptr [0x1400052d0]
+	
+exit:
+	JMP qword ptr [0x1400052c8]
+	
+_exit:
+	JMP qword ptr [0x1400052c0]
+	
+_set_fmode:
+	JMP qword ptr [0x140005330]
+	
+_cexit:
+	JMP qword ptr [0x1400052b0]
+	
+_register_thread_local_exe_atexit_callback:
+	JMP qword ptr [0x1400052a8]
+	
+_configthreadlocale:
+	JMP qword ptr [0x140005278]
+	
+__p__commode:
+	JMP qword ptr [0x140005328]
+	
+_initialize_onexit_table:
+	JMP qword ptr [0x140005298]
+	
+_register_onexit_function:
+	JMP qword ptr [0x1400052f8]
+	
+_crt_atexit:
+	JMP qword ptr [0x1400052a0]
+	
+terminate:
+	JMP qword ptr [0x140005310]
+	
+AfxInitialize:
+	MOV qword ptr [RSP + 0x8],RBX
+	PUSH RDI
+	SUB RSP,0x20
+	MOV EDI,EDX
+	MOV EBX,ECX
+	CALL 0x1400030f1
+	MOV byte ptr [RAX + 0x28],BL
+	MOV RBX,qword ptr [RSP + 0x30]
+	MOV dword ptr [RAX + 0x78],EDI
+	MOV EAX,0x1
+	ADD RSP,0x20
+	POP RDI
+	RET
+	
+AfxWinMain:
+	JMP 0x14000416d
+	
+AfxWinMain:
+	JMP qword ptr [0x140005890]
+	
+_CxxThrowException:
+	JMP qword ptr [0x140005230]
+	
+memcmp:
+	JMP qword ptr [0x140005228]
+	
+memcpy:
+	JMP qword ptr [0x140005220]
+	
+_guard_dispatch_icall:
+	JMP RAX
+	
