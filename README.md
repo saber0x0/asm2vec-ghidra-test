@@ -1,3 +1,6 @@
+# Source repository
+https://github.com/Lancern/asm2vec
+
 # asm2vec
 
 This is an unofficial implementation of the `asm2vec` model as a standalone python package. The details of the model can be found in the original paper: [(sp'19) Asm2Vec: Boosting Static Representation Robustness for Binary Clone Search against Code Obfuscation and Compiler Optimization](https://www.computer.org/csdl/proceedings-article/sp/2019/666000a038/19skfc3ZfKo)
